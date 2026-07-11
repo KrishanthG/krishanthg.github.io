@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research & Articles | Krishanth G</title>
+    
+    <!-- SEO -->
+    <meta name="description" content="Research, articles, and technical thought leadership on Artificial Intelligence, NLP, and Software Engineering by Krishanth G.">
+    <meta name="theme-color" content="#040609">
+    <link rel="icon" type="image/png" href="assets/About%20Me/me.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Google Analytics (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --nav-height: 52px;
+            --nav-bg: rgba(255, 255, 255, 0.78);
+            --nav-bg-scrolled: rgba(248, 250, 252, 0.94);
+            --nav-border: rgba(53, 146, 255, 0.14);
+            --accent: #3592FF;
+            --text-primary: rgba(15, 23, 42, 0.90);
+            --text-secondary: rgba(71, 85, 105, 0.85);
+            --bg-color: #040609;
+        }
+
+        body {
+            background: var(--bg-color);
+            color: #ffffff;
+            font-family: 'Inter', -apple-system, sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Hardware-Accelerated Native Custom Cursor */
+        body, html, * {
+            cursor: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.5 4.5L25.5 13.5L16.5 16L12.5 26.5L7.5 4.5Z' fill='black' stroke='white' stroke-width='2.5' stroke-linejoin='round'/%3E%3C/svg%3E") 7 4, auto !important;
+        }
+        a, button, .article-card {
+            cursor: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.5 4.5L25.5 13.5L16.5 16L12.5 26.5L7.5 4.5Z' fill='%23078EFA' stroke='white' stroke-width='2.5' stroke-linejoin='round'/%3E%3C/svg%3E") 7 4, pointer !important;
+        }
+
+        /* Film Grain */
+        .film-grain {
+            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+            pointer-events: none; z-index: 9999; opacity: 0.05;
+            background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+
+        /* Nav */
+        .apple-nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 9999;
+            height: var(--nav-height);
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 0 24px;
+            background: rgba(10, 15, 25, 0.7);
+            backdrop-filter: saturate(180%) blur(24px);
+            -webkit-backdrop-filter: saturate(180%) blur(24px);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            transition: all .35s ease;
+        }
+        .apple-nav.scrolled {
+            height: 44px; background: rgba(5, 8, 15, 0.9);
+            border-color: rgba(53,146,255,.1);
+            box-shadow: 0 1px 24px rgba(53,146,255,.05);
+        }
+        .nav-logo { display:flex; align-items:center; gap:10px; text-decoration:none; }
+        .nav-logo-mark {
+            width:30px; height:30px; border-radius:8px;
+            background: linear-gradient(135deg,#5aaaff 0%,#3592FF 100%);
+            display:flex; align-items:center; justify-content:center;
+            font-size:11px; font-weight:700; color:#fff;
+        }
+        .nav-logo-text { font-size:15px; font-weight:600; color:#fff; }
+        .nav-actions { display:flex; gap:16px; align-items:center; }
+        .nav-btn-ghost { color:#fff; text-decoration:none; font-size:12px; font-weight:500; opacity: 0.8; transition: opacity 0.3s; }
+        .nav-btn-ghost:hover { opacity: 1; }
+
+        /* Page Layout */
+        .page-header {
+            padding-top: calc(var(--nav-height) + 120px);
+            padding-bottom: 60px;
+            max-width: 1100px; margin: 0 auto;
+            padding-left: 24px; padding-right: 24px;
+            text-align: center;
+        }
+        .page-title {
+            font-size: clamp(40px, 6vw, 64px);
+            font-weight: 800; letter-spacing: -0.03em;
+            background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.6) 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+        }
+        .page-desc {
+            font-size: 18px; color: rgba(255,255,255,0.6);
+            max-width: 600px; margin: 0 auto; line-height: 1.6;
+        }
+
+        .research-grid {
+            max-width: 1100px; margin: 0 auto 120px;
+            padding: 0 24px;
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 24px;
+        }
+
+        .article-card {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 20px;
+            padding: 32px;
+            text-decoration: none;
+            display: flex; flex-direction: column; gap: 16px;
+            transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+        }
+        .article-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.04);
+            border-color: rgba(53,146,255,0.3);
+        }
+        .article-meta {
+            display: flex; align-items: center; justify-content: space-between;
+            font-size: 12px; color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;
+        }
+        .article-date { color: rgba(255,255,255,0.4); font-weight: 400; }
+        .article-title {
+            font-size: 22px; font-weight: 700; color: #fff; line-height: 1.3;
+        }
+        .article-excerpt {
+            font-size: 14px; color: rgba(255,255,255,0.5); line-height: 1.6; flex-grow: 1;
+        }
+        .read-more {
+            margin-top: 16px; display: inline-flex; align-items: center; gap: 8px;
+            color: #fff; font-size: 13px; font-weight: 600;
+        }
+        .read-more svg { width: 14px; height: 14px; transition: transform 0.3s; }
+        .article-card:hover .read-more svg { transform: translateX(4px); }
+
+    </style>
+</head>
+<body>
+
+    <div class="film-grain"></div>
+
+    <header>
+        <nav class="apple-nav" id="apple-nav">
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-mark">GK</div>
+                <span class="nav-logo-text">Krishanth</span>
+            </a>
+            <div class="nav-actions">
+                <a href="index.html" class="nav-btn-ghost">Back to Portfolio</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="page-header">
+        <h1 class="page-title">Research & Articles</h1>
+        <p class="page-desc">Deep dives into Artificial Intelligence, Natural Language Processing, and scalable software architecture.</p>
+    </div>
+
+    <div class="research-grid">
+        
+        <!-- Article 1 -->
+        <a href="article-template.html" class="article-card magnetic">
+            <div class="article-meta">
+                <span>NLP Research</span>
+                <span class="article-date">Mar 2026</span>
+            </div>
+            <h2 class="article-title">Machine Reading Comprehension for the Tamil Language</h2>
+            <p class="article-excerpt">An exploration of fine-tuning advanced multilingual Transformer models (MuRIL & XLM-RoBERTa) to decode complex, agglutinative Tamil script morphosyntactically.</p>
+            <div class="read-more">Read Paper <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        </a>
+
+        <!-- Article 2 -->
+        <a href="article-template.html" class="article-card magnetic">
+            <div class="article-meta">
+                <span>AI Implementation</span>
+                <span class="article-date">Dec 2025</span>
+            </div>
+            <h2 class="article-title">Sliding Window Strategy for Long-Form Context</h2>
+            <p class="article-excerpt">How to bypass the standard 512-token Transformer constraint to seamlessly evaluate long-form documents without data loss.</p>
+            <div class="read-more">Read Article <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
+        </a>
+
+        <!-- Add more cards here over time -->
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script>
+        // Nav Shrink
+        window.addEventListener('scroll', () => {
+            document.getElementById('apple-nav').classList.toggle('scrolled', window.scrollY > 10);
+        }, { passive: true });
+
+        // Magnetic Effect
+        const magneticEls = document.querySelectorAll('.magnetic, .nav-logo-mark, .nav-btn-ghost');
+        magneticEls.forEach((el) => {
+            el.addEventListener('mousemove', (e) => {
+                const rect = el.getBoundingClientRect();
+                const x = (e.clientX - rect.left - rect.width / 2) * 0.15;
+                const y = (e.clientY - rect.top - rect.height / 2) * 0.15;
+                gsap.to(el, { x: x, y: y, duration: 0.4, ease: "power2.out" });
+            });
+            el.addEventListener('mouseleave', () => {
+                gsap.to(el, { x: 0, y: 0, duration: 0.7, ease: "elastic.out(1, 0.3)" });
+            });
+        });
+
+        // Entrance Animation
+        gsap.from(".page-header > *", { y: 30, opacity: 0, duration: 1, stagger: 0.2, ease: "power3.out" });
+        gsap.from(".article-card", { y: 40, opacity: 0, duration: 0.8, stagger: 0.1, ease: "power3.out", delay: 0.3 });
+    </script>
+</body>
+</html>
