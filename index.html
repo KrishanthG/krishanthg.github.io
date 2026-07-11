@@ -1,0 +1,3146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishanth G | AI & Software Engineer Portfolio</title>
+    <meta name="description" content="Portfolio of Krishanth G, a Full-Stack AI Developer & Software Engineer specializing in Python, Cross-Platform Development, and advanced AI models.">
+    <meta name="author" content="Krishanth G">
+    <meta name="keywords" content="Krishanth G, AI Engineer, Software Engineer, Full Stack Developer, Python Developer, Tamil Technology, Tamil Varalaru, AI Developer Intern">
+    
+    <!-- SEO & Indexing -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#040609">
+    <meta name="creator" content="Krishanth G">
+    <meta name="publisher" content="Krishanth G">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://krishanthg.github.io" />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/png" href="assets/About%20Me/me.png">
+    <link rel="apple-touch-icon" href="assets/About%20Me/me.png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://krishanthg.github.io/">
+    <meta property="og:title" content="Krishanth G | AI & Software Engineer Portfolio">
+    <meta property="og:description" content="Portfolio of Krishanth G, a Full-Stack AI Developer & Software Engineer specializing in Python, Cross-Platform Development, and advanced AI models.">
+    <meta property="og:image" content="https://krishanthg.github.io/assets/Hero%20Image/Krish-Hero.jpg">
+    <meta property="og:site_name" content="Krishanth G Portfolio">
+    <meta property="og:locale" content="en_US">
+    <meta property="profile:first_name" content="Krishanth">
+    <meta property="profile:last_name" content="G">
+    <meta property="profile:username" content="krishanthg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://krishanthg.github.io/">
+    <meta property="twitter:title" content="Krishanth G | AI & Software Engineer Portfolio">
+    <meta property="twitter:description" content="Portfolio of Krishanth G, a Full-Stack AI Developer & Software Engineer specializing in Python, Cross-Platform Development, and advanced AI models.">
+    <meta property="twitter:image" content="https://krishanthg.github.io/assets/About%20Me/me.png">
+    <meta property="twitter:creator" content="@krishanthg">
+
+    <!-- Knowledge Panel JSON-LD Script -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Krishanth G",
+        "alternateName": "Krishanth",
+        "jobTitle": "AI & Software Engineer",
+        "description": "Krishanth G is a Full-Stack AI Developer and Software Engineer specializing in Python, Cross-Platform Development, and advanced NLP AI models.",
+        "disambiguatingDescription": "AI Engineer and creator of Tamil Technology and Tamil Varalaru.",
+        "url": "https://krishanthg.github.io",
+        "image": "https://krishanthg.github.io/assets/About%20Me/me.png",
+        "gender": "Male",
+        "nationality": "Indian",
+        "homeLocation": {
+          "@type": "Place",
+          "name": "Chennai, Tamil Nadu, India"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/krishanth-g",
+          "https://github.com/krishanthg",
+          "https://www.youtube.com/@TamilTechnology-youtube",
+          "https://www.youtube.com/@TamilVaralaru-tt"
+        ],
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Central Polytechnic College Chennai"
+        },
+        "worksFor": [
+          {
+            "@type": "Organization",
+            "name": "Navsar Engineering International"
+          }
+        ],
+        "knowsAbout": [
+          "Artificial Intelligence",
+          "Machine Learning",
+          "Natural Language Processing",
+          "Software Engineering",
+          "Python",
+          "Full Stack Web Development"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Krishanth G Portfolio",
+        "url": "https://krishanthg.github.io"
+      }
+    ]
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --nav-height: 52px;
+            --nav-bg: rgba(255, 255, 255, 0.78);
+            --nav-bg-scrolled: rgba(248, 250, 252, 0.94);
+            --nav-border: rgba(53, 146, 255, 0.14);
+            --accent: #3592FF;
+            --accent-hover: #1a7bff;
+            --accent-dim: rgba(53, 146, 255, 0.12);
+            --text-primary: rgba(15, 23, 42, 0.90);
+            --text-secondary: rgba(71, 85, 105, 0.85);
+            --text-hover: rgba(15, 23, 42, 1);
+            --surface: rgba(255, 255, 255, 0.80);
+            --surface-border: rgba(53, 146, 255, 0.14);
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            background: linear-gradient(160deg, #f0f9ff 0%, #e0f2fe 55%, #f8fafc 100%);
+            color: var(--text-primary);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        /* ═══════════════════════════════════════
+           NAVIGATION
+        ═══════════════════════════════════════ */
+        .apple-nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 9999;
+            height: var(--nav-height);
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 0 24px;
+            background: var(--nav-bg);
+            backdrop-filter: saturate(180%) blur(24px);
+            -webkit-backdrop-filter: saturate(180%) blur(24px);
+            border-bottom: 1px solid var(--nav-border);
+            transition: background .35s ease, height .35s ease, border-color .35s ease;
+            user-select: none;
+        }
+        .apple-nav.scrolled {
+            height: 44px; background: var(--nav-bg-scrolled);
+            border-color: rgba(53,146,255,.22);
+            box-shadow: 0 1px 24px rgba(53,146,255,.08);
+        }
+        .nav-logo { display:flex; align-items:center; gap:10px; text-decoration:none; flex-shrink:0; }
+        .nav-logo-mark {
+            width:30px; height:30px; border-radius:8px;
+            background: linear-gradient(135deg,#5aaaff 0%,#3592FF 100%);
+            display:flex; align-items:center; justify-content:center;
+            font-size:11px; font-weight:700; letter-spacing:.04em; color:#fff;
+            transition: transform .2s ease, box-shadow .2s ease;
+        }
+        .nav-logo:hover .nav-logo-mark { transform:scale(1.08); box-shadow:0 0 18px rgba(53,146,255,.5); }
+        .nav-logo-text { font-size:14px; font-weight:600; letter-spacing:-.01em; color:var(--text-primary); }
+        .nav-links {
+            position:absolute; left:50%; transform:translateX(-50%);
+            display:flex; align-items:center; gap:2px; list-style:none;
+        }
+        .nav-links a {
+            display:inline-flex; align-items:center; padding:6px 14px;
+            font-size:13px; font-weight:400; color:var(--text-secondary);
+            text-decoration:none; border-radius:980px; letter-spacing:-.01em;
+            transition: color .2s ease, background .2s ease; position:relative;
+        }
+        .nav-links a::after {
+            content:''; position:absolute; inset:0; border-radius:980px;
+            background:transparent; transition: background .2s ease;
+        }
+        .nav-links a:hover { color:var(--text-hover); }
+        .nav-links a:hover::after { background:rgba(53,146,255,.09); }
+        .nav-links a.active { color:var(--text-hover); font-weight:500; }
+        .nav-links a.active::after { background:rgba(53,146,255,.12); }
+        .nav-actions { display:flex; align-items:center; gap:10px; flex-shrink:0; }
+        .nav-btn-ghost {
+            display:inline-flex; align-items:center; gap:6px; padding:6px 14px;
+            font-size:13px; font-weight:400; color:var(--text-secondary);
+            background:transparent; border:none; border-radius:980px;
+            cursor:pointer; text-decoration:none; letter-spacing:-.01em;
+            transition: color .2s ease, background .2s ease;
+        }
+        .nav-btn-ghost:hover { color:var(--accent); background:rgba(53,146,255,.09); }
+        .nav-btn-primary {
+            display:inline-flex; align-items:center; padding:7px 16px;
+            font-size:13px; font-weight:500; color:#fff; background:var(--accent);
+            border:none; border-radius:980px; cursor:pointer; text-decoration:none;
+            letter-spacing:-.01em;
+            transition: background .2s ease, transform .15s ease, box-shadow .2s ease;
+        }
+        .nav-btn-primary:hover { background:var(--accent-hover); transform:scale(1.03); box-shadow:0 4px 22px rgba(53,146,255,.45); }
+        .nav-btn-primary:active { transform:scale(.98); }
+        .nav-hamburger {
+            display:none; flex-direction:column; justify-content:center;
+            gap:5px; width:32px; height:32px; background:transparent;
+            border:none; cursor:pointer; padding:4px; border-radius:8px;
+            transition: background .2s ease;
+        }
+        .nav-hamburger:hover { background:rgba(53,146,255,.09); }
+        .nav-hamburger span {
+            display:block; height:1.5px; background:var(--text-secondary); border-radius:2px;
+            transition: transform .3s ease, opacity .3s ease, width .3s ease;
+        }
+        .nav-hamburger span:nth-child(2) { width:70%; }
+        .nav-hamburger.open span:nth-child(1) { transform:translateY(6.5px) rotate(45deg); }
+        .nav-hamburger.open span:nth-child(2) { opacity:0; transform:scaleX(0); }
+        .nav-hamburger.open span:nth-child(3) { transform:translateY(-6.5px) rotate(-45deg); }
+        .nav-mobile-menu {
+            position:fixed; top:var(--nav-height); left:0; right:0;
+            background:rgba(248,250,252,.98); backdrop-filter:blur(30px);
+            -webkit-backdrop-filter:blur(30px);
+            border-bottom:1px solid var(--nav-border);
+            display:flex; flex-direction:column; padding:12px 20px 20px; gap:2px;
+            transform:translateY(-12px); opacity:0; pointer-events:none;
+            transition: transform .3s cubic-bezier(.25,.46,.45,.94), opacity .3s ease;
+            z-index:9998;
+        }
+        .nav-mobile-menu.open { transform:translateY(0); opacity:1; pointer-events:all; }
+        .nav-mobile-menu a {
+            display:block; padding:13px 16px; font-size:16px; font-weight:400;
+            color:var(--text-secondary); text-decoration:none; border-radius:12px;
+            transition: color .2s ease, background .2s ease;
+        }
+        .nav-mobile-menu a:hover { color:var(--accent); background:rgba(53,146,255,.08); }
+        .nav-mobile-divider { height:1px; background:var(--nav-border); margin:8px 16px; }
+        .nav-mobile-cta {
+            margin:8px 16px 0; display:block; text-align:center; padding:13px 16px;
+            font-size:15px; font-weight:500; color:#fff; background:var(--accent);
+            text-decoration:none; border-radius:14px; transition:background .2s ease;
+        }
+        .nav-mobile-cta:hover { background:var(--accent-hover); }
+        @media (max-width:768px) {
+            .nav-links, .nav-btn-ghost, .nav-btn-primary { display:none; }
+            .nav-hamburger { display:flex; }
+        }
+
+        /* ═══════════════════════════════════════
+           SHARED SECTION UTILS
+        ═══════════════════════════════════════ */
+        @keyframes fadeSlideUp {
+            from { opacity:0; transform:translateY(28px); }
+            to   { opacity:1; transform:translateY(0); }
+        }
+        @keyframes pulse {
+            0%,100% { opacity:1; transform:scale(1); }
+            50%      { opacity:.5; transform:scale(.8); }
+        }
+        @keyframes floatOrb {
+            0%,100% { transform:translateY(0) scale(1); }
+            50%      { transform:translateY(-28px) scale(1.04); }
+        }
+        @keyframes spin {
+            to { transform:rotate(360deg); }
+        }
+
+
+        /* ═══════════════════════════════════════
+           HERO SECTION
+        ═══════════════════════════════════════ */
+        #hero {
+            min-height: 100vh;
+            padding-top: calc(var(--nav-height) + 72px);
+            padding-bottom: 100px;
+            padding-left: max(24px, 6vw);
+            padding-right: max(24px, 6vw);
+            display: flex; align-items: center;
+            position: relative; overflow: hidden;
+        }
+        /* Ambient glow orbs */
+        #hero::before, #hero::after {
+            content:''; position:absolute; border-radius:50%;
+            pointer-events:none; filter:blur(100px);
+        }
+        #hero::before {
+            width:600px; height:600px;
+            background:radial-gradient(circle, rgba(53,146,255,.18) 0%, transparent 70%);
+            top:-80px; right:0;
+            animation:floatOrb 9s ease-in-out infinite;
+        }
+        #hero::after {
+            width:400px; height:400px;
+            background:radial-gradient(circle, rgba(53,146,255,.14) 0%, transparent 70%);
+            bottom:0; left:0;
+            animation:floatOrb 13s ease-in-out infinite reverse;
+        }
+
+        .hero-inner {
+            max-width: 1240px; margin: 0 auto; width: 100%;
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 80px; align-items: center;
+            position: relative; z-index: 2;
+        }
+
+        /* ── Left ── */
+        .hero-left { display:flex; flex-direction:column; gap:30px; }
+
+        .hero-badge {
+            display:inline-flex; align-items:center; gap:8px;
+            padding:7px 18px; border-radius:980px;
+            border:1px solid rgba(53,146,255,.28);
+            background:rgba(53,146,255,.07);
+            font-size:11px; font-weight:600; letter-spacing:.1em;
+            text-transform:uppercase; color:var(--accent);
+            width:fit-content;
+            animation:fadeSlideUp .6s ease both;
+        }
+        .hero-badge-dot {
+            width:6px; height:6px; border-radius:50%;
+            background:var(--accent); animation:pulse 2s ease-in-out infinite;
+        }
+
+        .hero-headline {
+            font-size: clamp(2.4rem, 4.8vw, 3.8rem);
+            font-weight: 900; line-height: 1.06; letter-spacing: -.03em;
+            color: var(--text-hover);
+            animation: fadeSlideUp .6s .1s ease both;
+        }
+        .hero-headline .accent-text {
+            background: linear-gradient(135deg, #3592FF 0%, #5aaaff 60%, #93c5fd 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-sub {
+            font-size: 16px; font-weight: 400; color: var(--text-secondary);
+            line-height: 1.75; max-width: 460px;
+            animation: fadeSlideUp .6s .2s ease both;
+        }
+
+        .hero-stats {
+            display:flex; align-items:center; gap:12px; flex-wrap:wrap;
+            animation: fadeSlideUp .6s .3s ease both;
+        }
+        .hero-stat {
+            display:flex; align-items:center; gap:10px; padding:10px 18px;
+            background:rgba(255,255,255,.82); border:1px solid rgba(53,146,255,.16);
+            border-radius:16px; backdrop-filter:blur(12px);
+            transition: transform .2s ease, box-shadow .2s ease;
+        }
+        .hero-stat:hover { transform:translateY(-3px); box-shadow:0 10px 28px rgba(53,146,255,.14); }
+        .hero-stat-logo { width:30px; height:30px; border-radius:8px; object-fit:cover; flex-shrink:0; }
+        .hero-stat-info { display:flex; flex-direction:column; gap:1px; }
+        .hero-stat-count { font-size:14px; font-weight:700; color:var(--text-hover); letter-spacing:-.02em; }
+        .hero-stat-label { font-size:10px; font-weight:500; color:var(--text-secondary); letter-spacing:.05em; text-transform:uppercase; }
+
+        .hero-ctas {
+            display:flex; align-items:center; gap:14px;
+            animation: fadeSlideUp .6s .4s ease both;
+        }
+        .hero-cta-primary {
+            display:inline-flex; align-items:center; gap:8px; padding:15px 30px;
+            background:var(--accent); color:#fff;
+            font-size:14px; font-weight:600; border-radius:980px;
+            text-decoration:none; letter-spacing:-.01em;
+            box-shadow: 0 4px 24px rgba(53,146,255,.35);
+            transition: background .2s ease, transform .15s ease, box-shadow .2s ease;
+        }
+        .hero-cta-primary:hover { background:var(--accent-hover); transform:scale(1.03); box-shadow:0 10px 36px rgba(53,146,255,.45); }
+        .hero-cta-primary:active { transform:scale(.98); }
+        .hero-cta-secondary {
+            display:inline-flex; align-items:center; gap:8px; padding:14px 28px;
+            background:rgba(255,255,255,.75); color:var(--text-primary);
+            font-size:14px; font-weight:500; border-radius:980px;
+            border:1px solid rgba(53,146,255,.22); text-decoration:none;
+            letter-spacing:-.01em; backdrop-filter:blur(8px);
+            transition: background .2s ease, border-color .2s ease, transform .15s ease;
+        }
+        .hero-cta-secondary:hover { background:rgba(53,146,255,.07); border-color:rgba(53,146,255,.38); transform:scale(1.02); }
+
+        /* ── Right: Image Frame ── */
+        .hero-right {
+            display:flex; justify-content:center; align-items:center;
+            position:relative;
+            animation: fadeSlideUp .8s .15s ease both;
+        }
+
+        .hero-image-wrap {
+            position:relative; width:100%; max-width:440px;
+        }
+
+        /* Outermost decorative spinning ring */
+        .hero-ring {
+            position:absolute;
+            inset:-28px;
+            border-radius:50%;
+            border:1.5px dashed rgba(53,146,255,.22);
+            animation: spin 28s linear infinite;
+            pointer-events:none;
+        }
+        .hero-ring::after {
+            content:'';
+            position:absolute;
+            width:10px; height:10px; border-radius:50%;
+            background:var(--accent);
+            top:50%; left:-5px; transform:translateY(-50%);
+            box-shadow:0 0 12px rgba(53,146,255,.8);
+        }
+
+        /* Inner glow halo */
+        .hero-glow-halo {
+            position:absolute; inset:-18px; border-radius:36px;
+            background:linear-gradient(135deg, rgba(53,146,255,.14) 0%, rgba(53,146,255,.06) 100%);
+            border:1px solid rgba(53,146,255,.18);
+            backdrop-filter:blur(6px);
+            animation: floatCard 6s ease-in-out infinite;
+        }
+        @keyframes floatCard {
+            0%,100% { transform:translateY(0) rotate(.2deg); }
+            50%      { transform:translateY(-12px) rotate(-.2deg); }
+        }
+
+        .hero-image {
+            position:relative; width:100%; border-radius:28px;
+            object-fit:cover; display:block; z-index:1;
+            box-shadow:
+                0 0 0 1px rgba(53,146,255,.12),
+                0 24px 60px rgba(53,146,255,.22),
+                0 8px 20px rgba(0,0,0,.07);
+        }
+
+        /* Corner accent lines */
+        .hero-corner {
+            position:absolute; width:28px; height:28px; z-index:3; pointer-events:none;
+        }
+        .hero-corner.tl { top:-2px; left:-2px; border-top:2.5px solid var(--accent); border-left:2.5px solid var(--accent); border-radius:6px 0 0 0; }
+        .hero-corner.tr { top:-2px; right:-2px; border-top:2.5px solid var(--accent); border-right:2.5px solid var(--accent); border-radius:0 6px 0 0; }
+        .hero-corner.bl { bottom:-2px; left:-2px; border-bottom:2.5px solid var(--accent); border-left:2.5px solid var(--accent); border-radius:0 0 0 6px; }
+        .hero-corner.br { bottom:-2px; right:-2px; border-bottom:2.5px solid var(--accent); border-right:2.5px solid var(--accent); border-radius:0 0 6px 0; }
+
+        /* Floating info chips */
+        .hero-float-chip {
+            position:absolute; z-index:4; padding:11px 16px;
+            background:rgba(255,255,255,.94);
+            backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px);
+            border:1px solid rgba(53,146,255,.2);
+            border-radius:16px;
+            box-shadow:0 12px 40px rgba(53,146,255,.16), 0 2px 8px rgba(0,0,0,.06);
+            display:flex; align-items:center; gap:10px; white-space:nowrap;
+        }
+        .hero-float-chip.chip-tl {
+            top:-22px; left:-22px;
+            animation: floatChip1 5s ease-in-out infinite;
+        }
+        .hero-float-chip.chip-br {
+            bottom:-22px; right:-22px;
+            animation: floatChip2 6s ease-in-out infinite;
+        }
+        @keyframes floatChip1 { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-9px);} }
+        @keyframes floatChip2 { 0%,100%{transform:translateY(0);} 50%{transform:translateY(9px);} }
+
+        .chip-icon-wrap {
+            width:34px; height:34px; border-radius:10px; flex-shrink:0;
+            display:flex; align-items:center; justify-content:center;
+            background:rgba(53,146,255,.1); font-size:18px; line-height:1;
+        }
+        .chip-text-wrap { display:flex; flex-direction:column; gap:2px; }
+        .chip-title { font-size:12px; font-weight:700; color:var(--text-hover); letter-spacing:-.02em; }
+        .chip-sub { font-size:10px; font-weight:500; color:var(--text-secondary); letter-spacing:.04em; }
+
+        /* ── Hero Responsive ── */
+        @media (max-width:960px) {
+            .hero-inner { grid-template-columns:1fr; gap:56px; text-align:center; }
+            .hero-badge, .hero-ctas, .hero-stats { margin:0 auto; justify-content:center; }
+            .hero-sub { margin:0 auto; }
+            .hero-right { order:-1; }
+            .hero-image-wrap { max-width:300px; }
+            .hero-ring { display:none; }
+            .hero-float-chip.chip-tl { top:-14px; left:-10px; }
+            .hero-float-chip.chip-br { bottom:-14px; right:-10px; }
+        }
+        @media (max-width:480px) {
+            .hero-ctas { flex-direction:column; align-items:stretch; }
+            .hero-cta-primary, .hero-cta-secondary { justify-content:center; padding:14px 20px; }
+        }
+
+
+        /* ═══════════════════════════════════════
+           ABOUT ME SECTION
+        ═══════════════════════════════════════ */
+        #about {
+            padding: 120px max(24px, 6vw);
+            position: relative; overflow: hidden;
+        }
+
+        /* Subtle background accent */
+        #about::before {
+            content:''; position:absolute; inset:0; pointer-events:none;
+            background:
+                radial-gradient(ellipse 60% 50% at 90% 20%, rgba(53,146,255,.08) 0%, transparent 70%),
+                radial-gradient(ellipse 40% 40% at 10% 80%, rgba(53,146,255,.06) 0%, transparent 70%);
+        }
+
+        .about-inner {
+            max-width:1240px; margin:0 auto; position:relative; z-index:2;
+        }
+
+        /* Section label */
+        .section-eyebrow {
+            display:inline-flex; align-items:center; gap:8px;
+            font-size:11px; font-weight:600; letter-spacing:.12em;
+            text-transform:uppercase; color:var(--accent);
+            margin-bottom:16px;
+        }
+        .section-eyebrow-line {
+            width:32px; height:1.5px; background:var(--accent); border-radius:2px;
+        }
+
+        .about-grid {
+            display:grid; grid-template-columns:1fr 1fr;
+            gap:72px; align-items:start;
+        }
+
+        /* ── Left: Content ── */
+        .about-left { display:flex; flex-direction:column; gap:32px; }
+
+        .about-title {
+            font-size: clamp(2rem, 3.5vw, 2.9rem);
+            font-weight:900; line-height:1.1; letter-spacing:-.03em;
+            color:var(--text-hover);
+        }
+        .about-title .accent-text {
+            background:linear-gradient(135deg, #3592FF 0%, #5aaaff 100%);
+            -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+            background-clip:text;
+        }
+
+        .about-bio {
+            font-size:15px; font-weight:400; color:var(--text-secondary);
+            line-height:1.8; max-width:540px;
+        }
+        .about-bio strong { color:var(--text-hover); font-weight:600; }
+
+        /* Credential stat chips */
+        .about-stats-row {
+            display:flex; align-items:stretch; gap:16px; flex-wrap:wrap;
+        }
+        .about-stat-chip {
+            display:flex; flex-direction:column; gap:4px;
+            padding:16px 22px;
+            background:rgba(255,255,255,.82); border:1px solid rgba(53,146,255,.16);
+            border-radius:18px; backdrop-filter:blur(10px);
+            transition:transform .2s ease, box-shadow .2s ease;
+            min-width:110px;
+        }
+        .about-stat-chip:hover { transform:translateY(-3px); box-shadow:0 10px 28px rgba(53,146,255,.14); }
+        .about-stat-num {
+            font-size:1.8rem; font-weight:900; letter-spacing:-.04em;
+            color:var(--accent);
+        }
+        .about-stat-desc {
+            font-size:11px; font-weight:500; color:var(--text-secondary);
+            text-transform:uppercase; letter-spacing:.06em; line-height:1.4;
+        }
+
+        /* Key Strengths */
+        .about-strengths-label {
+            font-size:12px; font-weight:600; letter-spacing:.08em;
+            text-transform:uppercase; color:var(--text-secondary);
+            margin-bottom:14px;
+        }
+        .about-skills-grid {
+            display:flex; flex-wrap:wrap; gap:10px;
+        }
+        .about-skill-pill {
+            display:inline-flex; align-items:center; gap:8px;
+            padding:8px 16px;
+            background:rgba(255,255,255,.78); border:1px solid rgba(53,146,255,.2);
+            border-radius:980px; font-size:13px; font-weight:500;
+            color:var(--text-primary);
+            transition:background .2s ease, border-color .2s ease, transform .15s ease, color .2s ease;
+            cursor:default;
+        }
+        .about-skill-pill:hover {
+            background:rgba(53,146,255,.08); border-color:rgba(53,146,255,.4);
+            color:var(--accent); transform:translateY(-2px);
+        }
+        .about-skill-dot {
+            width:5px; height:5px; border-radius:50%; background:var(--accent); flex-shrink:0;
+        }
+
+        /* CTA link */
+        .about-cta-row { display:flex; align-items:center; gap:16px; padding-top:4px; }
+        .about-cta {
+            display:inline-flex; align-items:center; gap:8px; padding:13px 26px;
+            background:var(--accent); color:#fff;
+            font-size:14px; font-weight:600; border-radius:980px;
+            text-decoration:none; letter-spacing:-.01em;
+            transition:background .2s ease, transform .15s ease, box-shadow .2s ease;
+        }
+        .about-cta:hover { background:var(--accent-hover); transform:scale(1.03); box-shadow:0 8px 28px rgba(53,146,255,.4); }
+        .about-cta-ghost {
+            display:inline-flex; align-items:center; gap:6px; padding:12px 22px;
+            background:rgba(255,255,255,.7); color:var(--text-primary);
+            font-size:14px; font-weight:500; border-radius:980px;
+            border:1px solid rgba(53,146,255,.22); text-decoration:none;
+            letter-spacing:-.01em; backdrop-filter:blur(8px);
+            transition:background .2s ease, border-color .2s ease, transform .15s ease;
+        }
+        .about-cta-ghost:hover { background:rgba(53,146,255,.07); border-color:rgba(53,146,255,.38); transform:scale(1.02); }
+
+        /* ── Right: Portrait ── */
+        .about-right {
+            position:sticky; top:calc(var(--nav-height) + 32px);
+            display:flex; flex-direction:column; gap:24px; align-items:center;
+        }
+
+        .about-portrait-wrap {
+            position:relative; width:100%; max-width:380px;
+        }
+
+        /* Decorative grid pattern behind portrait */
+        .about-portrait-wrap::before {
+            content:''; position:absolute;
+            inset:-24px; border-radius:36px;
+            background-image:
+                linear-gradient(rgba(53,146,255,.1) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(53,146,255,.1) 1px, transparent 1px);
+            background-size:24px 24px;
+            opacity:.5;
+        }
+
+        /* Accent block behind portrait */
+        .about-portrait-wrap::after {
+            content:''; position:absolute;
+            inset:0; border-radius:28px;
+            background:linear-gradient(145deg, rgba(53,146,255,.15) 0%, rgba(53,146,255,.06) 100%);
+            border:1px solid rgba(53,146,255,.2);
+            transform:translate(10px, 10px);
+        }
+
+        .about-portrait {
+            position:relative; width:100%; border-radius:24px; display:block;
+            object-fit:cover; z-index:2;
+            box-shadow:
+                0 0 0 1px rgba(53,146,255,.15),
+                0 28px 70px rgba(53,146,255,.2),
+                0 8px 20px rgba(0,0,0,.07);
+            aspect-ratio: 4/5;
+        }
+
+        /* Floating info card below portrait */
+        .about-portrait-card {
+            position:absolute; bottom:-20px; left:50%; transform:translateX(-50%);
+            z-index:3; white-space:nowrap;
+            padding:12px 20px;
+            background:rgba(255,255,255,.95); backdrop-filter:blur(20px);
+            border:1px solid rgba(53,146,255,.18); border-radius:18px;
+            box-shadow:0 12px 36px rgba(53,146,255,.16);
+            display:flex; align-items:center; gap:12px;
+        }
+        .portrait-card-avatar {
+            width:36px; height:36px; border-radius:50%;
+            background:linear-gradient(135deg, #5aaaff, #3592FF);
+            display:flex; align-items:center; justify-content:center;
+            font-size:14px; font-weight:700; color:#fff; flex-shrink:0;
+        }
+        .portrait-card-info { display:flex; flex-direction:column; gap:2px; }
+        .portrait-card-name { font-size:13px; font-weight:700; color:var(--text-hover); letter-spacing:-.02em; }
+        .portrait-card-role { font-size:11px; font-weight:400; color:var(--text-secondary); }
+        .portrait-card-badge {
+            display:flex; align-items:center; gap:5px;
+            padding:4px 10px; background:rgba(53,146,255,.1); border-radius:980px;
+            font-size:10px; font-weight:600; color:var(--accent); text-transform:uppercase; letter-spacing:.06em;
+        }
+        .portrait-card-badge-dot {
+            width:5px; height:5px; border-radius:50%; background:var(--accent);
+            animation:pulse 2s ease-in-out infinite;
+        }
+
+        /* Education pills below portrait */
+        .about-edu-cards { display:flex; flex-direction:column; gap:10px; width:100%; max-width:380px; padding-top:24px; }
+        .about-edu-card {
+            display:flex; align-items:center; gap:12px; padding:12px 16px;
+            background:rgba(255,255,255,.82); border:1px solid rgba(53,146,255,.16);
+            border-radius:14px; backdrop-filter:blur(10px);
+            transition:transform .2s ease, box-shadow .2s ease;
+        }
+        .about-edu-card:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(53,146,255,.12); }
+        .about-edu-icon {
+            width:42px; height:42px; border-radius:10px; flex-shrink:0;
+            background:rgba(255,255,255,.9); border:1px solid rgba(53,146,255,.12);
+            display:flex; align-items:center; justify-content:center;
+            overflow:hidden; padding:4px;
+        }
+        .about-edu-icon img {
+            width:100%; height:100%; object-fit:contain; display:block;
+        }
+        .about-edu-info { display:flex; flex-direction:column; gap:2px; }
+        .about-edu-name { font-size:12px; font-weight:600; color:var(--text-hover); line-height:1.3; }
+        .about-edu-sub { font-size:11px; font-weight:400; color:var(--text-secondary); }
+
+        /* ── About Responsive ── */
+        @media (max-width:960px) {
+            .about-grid { grid-template-columns:1fr; gap:56px; }
+            .about-right { position:static; align-items:center; }
+            .about-portrait-wrap { max-width:300px; }
+        }
+        @media (max-width:600px) {
+            .about-stats-row { flex-wrap:wrap; }
+            .about-cta-row { flex-direction:column; align-items:stretch; }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Premium Preloader -->
+    <div id="premium-preloader">
+        <div class="preloader-text">KRISHANTH G</div>
+    </div>
+    <!-- Cinematic Film Grain Overlay -->
+    <div class="film-grain"></div>
+
+    <!-- ══════════════════════════════════
+         NAVIGATION
+    ══════════════════════════════════ -->
+    <header>
+        <nav class="apple-nav" id="apple-nav" role="navigation" aria-label="Main navigation">
+            <a href="#" class="nav-logo" aria-label="GK Portfolio Home">
+                <div class="nav-logo-mark">GK</div>
+                <span class="nav-logo-text">Krishanth</span>
+            </a>
+            <ul class="nav-links" role="list">
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Timeline</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="nav-btn-ghost">Resume</a>
+                <a href="#contact" class="nav-btn-primary">Hire Me</a>
+                <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+        <div class="nav-mobile-menu" id="nav-mobile-menu" role="dialog" aria-label="Mobile navigation">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Timeline</a>
+            <a href="#contact">Contact</a>
+            <div class="nav-mobile-divider"></div>
+            <a href="#" class="nav-btn-ghost" style="padding:13px 16px;font-size:15px;">Resume</a>
+            <a href="#contact" class="nav-mobile-cta">Hire Me</a>
+        </div>
+    </header>
+
+
+    <!-- ══════════════════════════════════
+         HERO SECTION
+    ══════════════════════════════════ -->
+    <section id="hero">
+        <div class="hero-inner">
+
+            <!-- Left: Typography -->
+            <div class="hero-left">
+                <div class="hero-badge">
+                    <span class="hero-badge-dot"></span>
+                    Welcome to my Portfolio
+                </div>
+
+                <h1 class="hero-headline">
+                    I write code to build the future,&nbsp;and
+                    <span class="accent-text">train&nbsp;AI to decode&nbsp;the&nbsp;past.</span>
+                </h1>
+
+                <p class="hero-sub">
+                    Python Engineer &amp; Full-Stack AI Developer crafting intelligent systems that merge deep machine learning with robust web architecture.
+                </p>
+
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <img src="assets/logo-yt/TT.png" alt="Tamil Technology" class="hero-stat-logo">
+                        <div class="hero-stat-info">
+                            <span class="hero-stat-count">1.5k</span>
+                            <span class="hero-stat-label">Subscribers</span>
+                        </div>
+                    </div>
+                    <div class="hero-stat">
+                        <img src="assets/logo-yt/TV.png" alt="Tamil Varalaru" class="hero-stat-logo">
+                        <div class="hero-stat-info">
+                            <span class="hero-stat-count">2.5k</span>
+                            <span class="hero-stat-label">Subscribers</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-ctas">
+                    <a href="#projects" class="hero-cta-primary" id="hero-explore-btn">
+                        Explore Work
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/krishanth-g" target="_blank" rel="noopener" class="hero-cta-secondary" id="hero-connect-btn">
+                        Connect on LinkedIn
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right: Image -->
+            <div class="hero-right">
+                <div class="hero-image-wrap">
+                    <!-- Decorative spinning ring -->
+                    <div class="hero-ring"></div>
+
+                    <!-- Inner glow halo -->
+                    <div class="hero-glow-halo"></div>
+
+                    <!-- Corner accent brackets -->
+                    <div class="hero-corner tl"></div>
+                    <div class="hero-corner tr"></div>
+                    <div class="hero-corner bl"></div>
+                    <div class="hero-corner br"></div>
+
+                    <!-- Floating chip — top left -->
+                    <div class="hero-float-chip chip-tl">
+                        <div class="chip-icon-wrap" style="color: var(--accent); display: flex; align-items: center; justify-content: center;">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+                        </div>
+                        <div class="chip-text-wrap">
+                            <span class="chip-title">Full-Stack AI</span>
+                            <span class="chip-sub">Python · AI · LLMs</span>
+                        </div>
+                    </div>
+
+                    <img src="assets/Hero Image/hero.png" alt="Krishanth G — Developer & AI Engineer" class="hero-image">
+
+                    <!-- Floating chip — bottom right -->
+                    <div class="hero-float-chip chip-br">
+                        <div class="chip-icon-wrap" style="color: #10B981; display: flex; align-items: center; justify-content: center;">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                        </div>
+                        <div class="chip-text-wrap">
+                            <span class="chip-title">Open to Work</span>
+                            <span class="chip-sub">Available Now</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════
+         ABOUT ME SECTION
+    ══════════════════════════════════ -->
+    <section id="about">
+        <div class="about-inner">
+
+            <!-- Section eyebrow -->
+            <div class="section-eyebrow">
+                <span class="section-eyebrow-line"></span>
+                About Me
+            </div>
+
+            <div class="about-grid">
+
+                <!-- ── Left: Content ── -->
+                <div class="about-left">
+
+                    <h2 class="about-title">
+                        Engineering intelligence<br>at the <span class="accent-text">intersection of AI</span><br>and the web.
+                    </h2>
+
+                    <p class="about-bio">
+                        Driven by a relentless passion for breaking down complex software lifecycles, I engineer <strong>high-impact AI ecosystems</strong> at the intersection of deep machine learning and robust web architecture. Currently pursuing a Diploma in Computer Technology at <strong>Central Polytechnic College Chennai</strong> and qualified for the Foundation Level of <strong>IIT Madras's B.S. Data Science</strong> program.
+                        <br><br>
+                        My engineering philosophy centers on constructing <strong>core neural pipelines from scratch</strong> — from mastering low-level runtime optimization at <strong>Stanford's Code in Place 2026</strong> to deploying an advanced MRC framework on multilingual Transformers (MuRIL) for Indic scripts. I also bridge the gap for the developer community as a content creator behind <strong>Tamil Technology</strong> and <strong>Tamil Varalaru</strong>.
+                    </p>
+
+                    <!-- Credential stats -->
+                    <div class="about-stats-row">
+                        <div class="about-stat-chip">
+                            <span class="about-stat-num">80+</span>
+                            <span class="about-stat-desc">Professional Credentials</span>
+                        </div>
+                        <div class="about-stat-chip">
+                            <span class="about-stat-num">4k+</span>
+                            <span class="about-stat-desc">Combined Subscribers</span>
+                        </div>
+                        <div class="about-stat-chip">
+                            <span class="about-stat-num">3+</span>
+                            <span class="about-stat-desc">Years Building AI</span>
+                        </div>
+                    </div>
+
+                    <!-- Key Strengths -->
+                    <div>
+                        <p class="about-strengths-label">Key Strengths</p>
+                        <div class="about-skills-grid">
+                            <span class="about-skill-pill"><span class="about-skill-dot"></span>Large Language Models</span>
+                            <span class="about-skill-pill"><span class="about-skill-dot"></span>Full-Stack AI Development</span>
+                            <span class="about-skill-pill"><span class="about-skill-dot"></span>Scalable System Architecture</span>
+                            <span class="about-skill-pill"><span class="about-skill-dot"></span>AI-Powered Products</span>
+                            <span class="about-skill-pill"><span class="about-skill-dot"></span>Python Ecosystem</span>
+                            <span class="about-skill-pill"><span class="about-skill-dot"></span>Cloud &amp; MLOps</span>
+                            <span class="about-skill-pill"><span class="about-skill-dot"></span>Performance Optimization</span>
+                            <span class="about-skill-pill"><span class="about-skill-dot"></span>AI Strategy &amp; Consulting</span>
+                        </div>
+                    </div>
+
+                    <!-- CTAs -->
+                    <div class="about-cta-row">
+                        <a href="#projects" class="about-cta">
+                            View My Work
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                        <a href="#contact" class="about-cta-ghost">Get In Touch</a>
+                    </div>
+                </div>
+
+                <!-- ── Right: Portrait ── -->
+                <div class="about-right">
+
+                    <div class="about-portrait-wrap">
+                        <img src="assets/About Me/me.png" alt="Krishanth G" class="about-portrait">
+
+                        <!-- Floating name card -->
+                        <div class="about-portrait-card">
+                            <div class="portrait-card-avatar">GK</div>
+                            <div class="portrait-card-info">
+                                <span class="portrait-card-name">Krishanth G</span>
+                                <span class="portrait-card-role">AI Engineer &amp; Developer</span>
+                            </div>
+                            <div class="portrait-card-badge">
+                                <span class="portrait-card-badge-dot"></span>
+                                Available
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education cards -->
+                    <div class="about-edu-cards">
+                        <div class="about-edu-card">
+                            <div class="about-edu-icon">
+                                <img src="assets/College & Academic logo/IIT_Madras_Logo.svg" alt="IIT Madras">
+                            </div>
+                            <div class="about-edu-info">
+                                <span class="about-edu-name">IIT Madras — B.S. Data Science</span>
+                                <span class="about-edu-sub">Foundation Level Qualified</span>
+                            </div>
+                        </div>
+                        <div class="about-edu-card">
+                            <div class="about-edu-icon">
+                                <img src="assets/College & Academic logo/stanford.png" alt="Stanford University">
+                            </div>
+                            <div class="about-edu-info">
+                                <span class="about-edu-name">Stanford — Code in Place 2026</span>
+                                <span class="about-edu-sub">Experienced Student Track</span>
+                            </div>
+                        </div>
+                        <div class="about-edu-card">
+                            <div class="about-edu-icon">
+                                <img src="assets/College & Academic logo/CPT-NOBG.png" alt="Central Polytechnic College">
+                            </div>
+                            <div class="about-edu-info">
+                                <span class="about-edu-name">Central Polytechnic College Chennai</span>
+                                <span class="about-edu-sub">Diploma in Computer Technology</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════
+         RECOGNISED BY — LOGO SLIDERS
+    ══════════════════════════════════ -->
+    <section id="recognised">
+        <style>
+            /* ── Section wrapper ── */
+            #recognised {
+                padding: 100px max(24px, 6vw) 80px;
+                position: relative; overflow: hidden;
+            }
+
+            /* Decorative mesh background */
+            #recognised::before {
+                content: '';
+                position: absolute; inset: 0; pointer-events: none;
+                background:
+                    radial-gradient(ellipse 70% 40% at 50% 0%, rgba(53,146,255,.07) 0%, transparent 70%),
+                    radial-gradient(ellipse 40% 30% at 10% 100%, rgba(53,146,255,.05) 0%, transparent 70%);
+            }
+
+            #recognised .section-eyebrow { margin-bottom: 12px; }
+
+            .recognised-headline {
+                font-size: clamp(1.8rem, 3vw, 2.6rem);
+                font-weight: 900; letter-spacing: -.03em;
+                color: var(--text-hover); margin-bottom: 64px;
+                max-width: 600px;
+            }
+            .recognised-headline .accent-text {
+                background: linear-gradient(135deg, #3592FF 0%, #5aaaff 100%);
+                -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+
+            /* ── Per-track block ── */
+            .logo-track-block {
+                margin-bottom: 36px;
+                padding: 28px 0 28px;
+                border-radius: 24px;
+                background: rgba(255,255,255,.45);
+                backdrop-filter: blur(12px);
+                border: 1px solid rgba(53,146,255,.1);
+                box-shadow: 0 2px 20px rgba(53,146,255,.06), inset 0 1px 0 rgba(255,255,255,.8);
+                overflow: hidden;
+            }
+            .logo-track-block:last-child { margin-bottom: 0; }
+
+            /* ── Track label header ── */
+            .logo-track-label {
+                display: flex; align-items: center; gap: 12px;
+                padding: 0 28px 20px;
+                border-bottom: 1px solid rgba(53,146,255,.08);
+                margin-bottom: 20px;
+            }
+
+            .logo-track-icon {
+                display: flex; align-items: center; justify-content: center;
+                width: 34px; height: 34px; border-radius: 10px; flex-shrink: 0;
+                font-size: 16px; line-height: 1;
+            }
+            .logo-track-icon.tech    { background: rgba(53,146,255,.12); }
+            .logo-track-icon.gov     { background: rgba(34,197,94,.12); }
+            .logo-track-icon.edu     { background: rgba(168,85,247,.12); }
+            .logo-track-icon.intl    { background: rgba(249,115,22,.12); }
+
+            .logo-track-meta { flex: 1; }
+            .logo-track-name {
+                font-size: 13px; font-weight: 700; letter-spacing: -.01em;
+                color: var(--text-hover); display: block;
+            }
+            .logo-track-sub {
+                font-size: 11px; font-weight: 400; color: var(--text-secondary);
+                letter-spacing: .02em;
+            }
+
+            .logo-track-count {
+                padding: 4px 12px;
+                background: rgba(53,146,255,.08);
+                border: 1px solid rgba(53,146,255,.18);
+                border-radius: 980px;
+                font-size: 11px; font-weight: 600;
+                color: var(--accent); letter-spacing: .04em;
+                white-space: nowrap;
+            }
+
+            /* ── Marquee container ── */
+            .logo-marquee-wrap {
+                position: relative; overflow: hidden; padding: 4px 0;
+                -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
+                mask-image: linear-gradient(90deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
+            }
+
+            .logo-marquee {
+                display: flex; align-items: center;
+                width: max-content;
+                animation: marquee-scroll var(--duration, 40s) linear infinite;
+                will-change: transform;
+            }
+            .logo-marquee:hover { animation-play-state: paused; }
+            .logo-marquee.reverse { animation-direction: reverse; }
+
+            @keyframes marquee-scroll {
+                from { transform: translateX(0); }
+                to   { transform: translateX(-50%); }
+            }
+
+            /* ── Individual logo card ── */
+            .logo-card {
+                position: relative;
+                display: flex; align-items: center; justify-content: center;
+                width: 152px; height: 84px; margin: 0 10px;
+                background: rgba(255,255,255,.92);
+                border: 1px solid rgba(53,146,255,.13);
+                border-radius: 18px; padding: 12px 18px;
+                flex-shrink: 0; overflow: hidden;
+                box-shadow: 0 2px 12px rgba(53,146,255,.06), 0 1px 0 rgba(255,255,255,.9) inset;
+                transition: border-color .3s ease, box-shadow .3s ease, transform .25s cubic-bezier(.34,1.56,.64,1);
+            }
+
+            /* Shimmer layer */
+            .logo-card::before {
+                content: '';
+                position: absolute; inset: 0; border-radius: inherit;
+                background: linear-gradient(135deg, rgba(255,255,255,0) 40%, rgba(53,146,255,.07) 100%);
+                opacity: 0;
+                transition: opacity .3s ease;
+            }
+
+            .logo-card:hover {
+                border-color: rgba(53,146,255,.4);
+                box-shadow:
+                    0 0 0 3px rgba(53,146,255,.08),
+                    0 16px 40px rgba(53,146,255,.18),
+                    0 4px 12px rgba(0,0,0,.06);
+                transform: translateY(-5px) scale(1.04);
+            }
+            .logo-card:hover::before { opacity: 1; }
+
+            .logo-card img {
+                position: relative; z-index: 1;
+                max-width: 100%; max-height: 48px;
+                width: auto; height: auto;
+                object-fit: contain; display: block;
+                filter: grayscale(20%) opacity(.82);
+                transition: filter .3s ease, transform .25s ease;
+            }
+            .logo-card:hover img {
+                filter: grayscale(0%) opacity(1);
+                transform: scale(1.06);
+            }
+
+            @media (max-width: 600px) {
+                .logo-card { width: 116px; height: 68px; margin: 0 8px; padding: 10px 14px; }
+                .logo-track-block { padding: 20px 0; }
+                .logo-track-label { padding: 0 16px 14px; }
+            }
+        </style>
+
+        <div class="about-inner">
+
+            <!-- Eyebrow + Headline -->
+            <div class="section-eyebrow">
+                <span class="section-eyebrow-line"></span>
+                Recognised By
+            </div>
+            <h2 class="recognised-headline">
+                Credentials trusted by<br>
+                <span class="accent-text">industry leaders worldwide.</span>
+            </h2>
+
+            <!-- ── Track 1: Tech Giants ── -->
+            <div class="logo-track-block">
+                <div class="logo-track-label">
+                    <div class="logo-track-icon tech">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3592FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3"/><line x1="9" y1="9" x2="9" y2="15"/><line x1="12" y1="7" x2="12" y2="17"/><line x1="15" y1="11" x2="15" y2="15"/></svg>
+                    </div>
+                    <div class="logo-track-meta">
+                        <span class="logo-track-name">Tech Giants</span>
+                        <span class="logo-track-sub">Global technology leaders</span>
+                    </div>
+                    <span class="logo-track-count">16 orgs</span>
+                </div>
+                <div class="logo-marquee-wrap">
+                    <div class="logo-marquee" style="--duration:35s;">
+                        <!-- Set A -->
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/google.png" alt="Google"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/google_cloud_community_india.png" alt="Google Cloud Community India"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/google_gemini.png" alt="Google Gemini"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/microsoft.png" alt="Microsoft"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/ibm.png" alt="IBM"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/hp.svg" alt="HP"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/accenture.png" alt="Accenture"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/tata_group.svg" alt="Tata Group"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/hcl_guvi.webp" alt="HCL GUVI"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/canva.png" alt="Canva"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/hackerrank.png" alt="HackerRank"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/linkedin_learning.png" alt="LinkedIn Learning"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/coursera.webp" alt="Coursera"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/udemy.png" alt="Udemy"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/coding_ninjas.png" alt="Coding Ninjas"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/cognitive_class.png" alt="Cognitive Class (IBM)"></div>
+                        <!-- Set B (duplicate for seamless loop) -->
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/google.png" alt="Google"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/google_cloud_community_india.png" alt="Google Cloud Community India"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/google_gemini.png" alt="Google Gemini"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/microsoft.png" alt="Microsoft"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/ibm.png" alt="IBM"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/hp.svg" alt="HP"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/accenture.png" alt="Accenture"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/tata_group.svg" alt="Tata Group"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/hcl_guvi.webp" alt="HCL GUVI"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/canva.png" alt="Canva"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/hackerrank.png" alt="HackerRank"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/linkedin_learning.png" alt="LinkedIn Learning"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/coursera.webp" alt="Coursera"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/udemy.png" alt="Udemy"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/coding_ninjas.png" alt="Coding Ninjas"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/cognitive_class.png" alt="Cognitive Class (IBM)"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── Track 2: Government Institutions ── -->
+            <div class="logo-track-block">
+                <div class="logo-track-label">
+                    <div class="logo-track-icon gov">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v3M12 14v3M16 14v3"/></svg>
+                    </div>
+                    <div class="logo-track-meta">
+                        <span class="logo-track-name">Government Institutions</span>
+                        <span class="logo-track-sub">Indian government bodies &amp; initiatives</span>
+                    </div>
+                    <span class="logo-track-count">6 orgs</span>
+                </div>
+                <div class="logo-marquee-wrap">
+                    <div class="logo-marquee reverse" style="--duration:30s;">
+                        <!-- Set A -->
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/isro.svg" alt="ISRO"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/ministry_of_education.svg" alt="Ministry of Education"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/department_of_science_&_technology.svg" alt="Dept of Science & Technology"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/niti_aayog.png" alt="NITI Aayog"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/mygov_india.svg" alt="MyGov India"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/india_ai_impact_summit.png" alt="India AI Impact Summit"></div>
+                        <!-- Set B -->
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/isro.svg" alt="ISRO"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/ministry_of_education.svg" alt="Ministry of Education"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/department_of_science_&_technology.svg" alt="Dept of Science & Technology"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/niti_aayog.png" alt="NITI Aayog"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/mygov_india.svg" alt="MyGov India"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/india_ai_impact_summit.png" alt="India AI Impact Summit"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── Track 3: Educational Institutes ── -->
+            <div class="logo-track-block">
+                <div class="logo-track-label">
+                    <div class="logo-track-icon edu">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 10l10-6 10 6-10 6z"/><path d="M6 12v5c0 1.657 2.686 3 6 3s6-1.343 6-3v-5"/><line x1="22" y1="10" x2="22" y2="16"/></svg>
+                    </div>
+                    <div class="logo-track-meta">
+                        <span class="logo-track-name">Educational Institutes</span>
+                        <span class="logo-track-sub">World-class academic institutions</span>
+                    </div>
+                    <span class="logo-track-count">9 orgs</span>
+                </div>
+                <div class="logo-marquee-wrap">
+                    <div class="logo-marquee" style="--duration:38s;">
+                        <!-- Set A -->
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/IIT_Madras_Logo.svg" alt="IIT Madras"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/stanford.png" alt="Stanford University"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/harvard_university.png" alt="Harvard University (CS50)"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/anna_university.png" alt="Anna University"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/nptel.png" alt="NPTEL"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/spoken_tutorial__iit_bombay.jpg" alt="Spoken Tutorial IIT Bombay"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/Logo_for_the_Centre_for_Development_of_Advanced_Computing.svg" alt="C-DAC"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/edupyramids.png" alt="EduPyramids"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/wisdomquant.png" alt="WisdomQuant"></div>
+                        <!-- Set B -->
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/IIT_Madras_Logo.svg" alt="IIT Madras"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/stanford.png" alt="Stanford University"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/harvard_university.png" alt="Harvard University (CS50)"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/anna_university.png" alt="Anna University"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/nptel.png" alt="NPTEL"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/spoken_tutorial__iit_bombay.jpg" alt="Spoken Tutorial IIT Bombay"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/Logo_for_the_Centre_for_Development_of_Advanced_Computing.svg" alt="C-DAC"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/edupyramids.png" alt="EduPyramids"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/wisdomquant.png" alt="WisdomQuant"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── Track 4: International Organisations ── -->
+            <div class="logo-track-block">
+                <div class="logo-track-label">
+                    <div class="logo-track-icon intl">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z"/></svg>
+                    </div>
+                    <div class="logo-track-meta">
+                        <span class="logo-track-name">International Organisations</span>
+                        <span class="logo-track-sub">Global professional bodies</span>
+                    </div>
+                    <span class="logo-track-count">5 orgs</span>
+                </div>
+                <div class="logo-marquee-wrap">
+                    <div class="logo-marquee reverse" style="--duration:24s;">
+                        <!-- Set A -->
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/project_management_institute.png" alt="Project Management Institute (PMI)"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/united_latino_students_association.png" alt="United Latino Students Association"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/coursera.webp" alt="Coursera (Global)"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/linkedin_learning.png" alt="LinkedIn (International)"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/microsoft.png" alt="Microsoft (Global)"></div>
+                        <!-- Set B -->
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/project_management_institute.png" alt="Project Management Institute (PMI)"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/united_latino_students_association.png" alt="United Latino Students Association"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/coursera.webp" alt="Coursera (Global)"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/linkedin_learning.png" alt="LinkedIn (International)"></div>
+                        <div class="logo-card"><img src="assets/downloaded_credentials_logos/microsoft.png" alt="Microsoft (Global)"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         EXPERIENCE SECTION
+    ══════════════════════════════════ -->
+    <section id="experience" style="padding: 100px max(24px, 6vw); background: #080b12; position: relative; z-index: 1;">
+        <div style="max-width: 900px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 64px;">
+                <h2 style="font-size: clamp(2.5rem, 4vw, 3.5rem); font-weight: 800; color: #fff; margin-bottom: 16px; letter-spacing: -0.02em;">
+                    Professional <span style="background: linear-gradient(135deg, #078EFA, #AD89EB); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Experience</span>
+                </h2>
+                <p style="color: rgba(255,255,255,0.6); font-size: 1.1rem; max-width: 600px; margin: 0 auto;">
+                    My industry experience and professional journey.
+                </p>
+            </div>
+
+            <style>
+                .exp-timeline { position: relative; padding-left: 48px; }
+                .exp-timeline::before {
+                    content: ''; position: absolute; left: 8px; top: 12px; bottom: 0;
+                    width: 2px; background: linear-gradient(180deg, rgba(7, 142, 250, 0.4) 0%, rgba(173, 137, 235, 0.4) 100%);
+                }
+                .exp-item {
+                    position: relative; margin-bottom: 56px;
+                }
+                .exp-item:last-child { margin-bottom: 0; }
+                .exp-dot {
+                    position: absolute; left: -46.5px; top: 8px;
+                    width: 14px; height: 14px; border-radius: 50%;
+                    background: #078EFA;
+                    box-shadow: 0 0 20px #078EFA, 0 0 0 6px rgba(7, 142, 250, 0.15);
+                }
+                
+                .exp-card {
+                    background: rgba(255, 255, 255, 0.02);
+                    border: 1px solid rgba(255, 255, 255, 0.05);
+                    border-radius: 24px;
+                    padding: 40px;
+                    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.4s ease, background 0.4s ease;
+                    backdrop-filter: blur(10px);
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 24px;
+                }
+                .exp-card:hover {
+                    transform: translateX(12px) translateY(-4px);
+                    border-color: rgba(7, 142, 250, 0.3);
+                    background: rgba(255, 255, 255, 0.04);
+                    box-shadow: 0 24px 48px rgba(0,0,0,0.2), 0 0 24px rgba(7, 142, 250, 0.1);
+                }
+                @media (max-width: 600px) {
+                    .exp-card { flex-direction: column; align-items: center; text-align: center; }
+                }
+                
+                .exp-logo {
+                    width: 80px; height: 80px;
+                    border-radius: 16px;
+                    object-fit: contain;
+                    background: #fff;
+                    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+                    flex-shrink: 0;
+                    padding: 8px;
+                    border: 1px solid rgba(255,255,255,0.1);
+                }
+                .exp-content { flex: 1; width: 100%; }
+
+                .exp-inst {
+                    font-size: 22px; font-weight: 800; color: #fff; margin-bottom: 8px; letter-spacing: -0.01em;
+                    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;
+                }
+                .exp-date {
+                    font-size: 13px; font-weight: 700; color: rgba(255,255,255,0.8); background: rgba(255,255,255,0.1); 
+                    padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.05);
+                }
+                .exp-role {
+                    display: inline-block;
+                    font-size: 15px; font-weight: 600; color: #078EFA; margin-bottom: 16px;
+                    padding: 6px 14px; border-radius: 8px; background: rgba(7, 142, 250, 0.1);
+                }
+                
+                .exp-desc {
+                    color: rgba(255,255,255,0.65); font-size: 15px; line-height: 1.6;
+                }
+            </style>
+
+            <div class="exp-timeline">
+                <div class="exp-item">
+                    <div class="exp-dot"></div>
+                    <div class="exp-card">
+                        <img class="exp-logo" src="assets/Experience/Navsar.png" alt="Navsar Engineering International Logo">
+                        <div class="exp-content">
+                            <div class="exp-inst">
+                                Navsar Engineering International (Singapore - Remote)
+                                <span class="exp-date">Aug 2025 - May 2026</span>
+                            </div>
+                            <div class="exp-role">Full Stack AI Developer Intern</div>
+                            <div class="exp-desc">Spearheading full-stack AI development initiatives, architecting scalable solutions, and collaborating with cross-functional teams to integrate advanced AI models into production environments.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         PROJECTS SECTION
+    ══════════════════════════════════ -->
+    <section id="projects" style="padding: 100px max(24px, 6vw); background: #f8fafc; position: relative; z-index: 1;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 64px;">
+                <h2 style="font-size: clamp(2.5rem, 4vw, 3.5rem); font-weight: 800; color: #111; margin-bottom: 16px; letter-spacing: -0.02em;">
+                    Featured <span style="background: linear-gradient(135deg, #078EFA, #AD89EB); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Projects</span>
+                </h2>
+                <p style="color: #555; font-size: 1.1rem; max-width: 600px; margin: 0 auto;">
+                    Showcasing my deep technical work in AI, NLP, and Full-Stack Development.
+                </p>
+            </div>
+
+            <style>
+                .proj-grid {
+                    display: flex; flex-direction: column; gap: 48px;
+                }
+                .proj-card {
+                    background: #fff;
+                    border: 1px solid rgba(0,0,0,0.06);
+                    border-radius: 24px;
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    box-shadow: 0 12px 32px rgba(0,0,0,0.04);
+                    transition: transform 0.4s ease, box-shadow 0.4s ease;
+                }
+                .proj-card:hover {
+                    transform: translateY(-8px);
+                    box-shadow: 0 24px 64px rgba(7, 142, 250, 0.12);
+                }
+                @media (min-width: 900px) {
+                    .proj-card { flex-direction: row; }
+                    .proj-image-wrap { width: 45%; flex-shrink: 0; }
+                    .proj-content { width: 55%; }
+                }
+                
+                .proj-image-wrap {
+                    position: relative;
+                    background: #f1f5f9;
+                    overflow: hidden;
+                }
+                .proj-image-wrap img {
+                    width: 100%; height: 100%;
+                    object-fit: cover;
+                    transition: transform 0.6s ease;
+                }
+                .proj-card:hover .proj-image-wrap img {
+                    transform: scale(1.05);
+                }
+                
+                .proj-content {
+                    padding: 40px;
+                    display: flex; flex-direction: column; justify-content: center;
+                }
+                .proj-header {
+                    display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px; margin-bottom: 12px;
+                }
+                .proj-title {
+                    font-size: 24px; font-weight: 800; color: #111; letter-spacing: -0.01em;
+                    line-height: 1.3;
+                }
+                .proj-meta {
+                    font-size: 14px; font-weight: 600; color: #078EFA;
+                    background: rgba(7, 142, 250, 0.1); padding: 4px 12px; border-radius: 6px;
+                }
+                .proj-sub {
+                    font-size: 14px; color: #64748b; font-weight: 600; margin-bottom: 24px;
+                }
+                .proj-desc {
+                    font-size: 15px; color: #475569; line-height: 1.6; margin-bottom: 24px;
+                }
+                .proj-list {
+                    list-style-type: disc; margin-left: 20px; font-size: 14px; color: #475569; margin-bottom: 24px;
+                }
+                .proj-list li { margin-bottom: 8px; line-height: 1.5; }
+                .proj-list strong { color: #1e293b; }
+                
+                .proj-tags {
+                    display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto;
+                }
+                .proj-tag {
+                    font-size: 13px; font-weight: 600; color: #1e293b;
+                    background: #f1f5f9; padding: 6px 12px; border-radius: 8px;
+                    border: 1px solid rgba(0,0,0,0.05);
+                }
+            </style>
+
+            <div class="proj-grid">
+                <!-- Project 1 -->
+                <div class="proj-card">
+                    <div class="proj-image-wrap">
+                        <img src="assets/pj img/mrc.png" alt="Machine Reading Comprehension">
+                    </div>
+                    <div class="proj-content">
+                        <div class="proj-header">
+                            <div class="proj-title">Machine Reading Comprehension for Tamil Language with Translated SQuAD</div>
+                            <div class="proj-meta">Oct 2025 – Mar 2026</div>
+                        </div>
+                        <div class="proj-sub">Associated with Central Polytechnic College Chennai</div>
+                        
+                        <p class="proj-desc">
+                            Developed an Intelligent Machine Reading Comprehension (MRC) and Extractive Question Answering (QA) system tailored specifically for the Tamil language to solve context-based query extraction.
+                        </p>
+                        
+                        <ul class="proj-list">
+                            <li><strong>Model Architecture:</strong> Fine-tuned Google's MuRIL and deepset/xlm-roberta-base-squad2 for complex, agglutinative Tamil script.</li>
+                            <li><strong>Algorithmic Logic:</strong> Engineered a "Sliding Window Strategy" (384 tokens) to evaluate long-form documents without data loss.</li>
+                            <li><strong>Middleware & API:</strong> Architected a responsive Python Flask RESTful backend utilizing flask_cors for robust tokenization pipelines.</li>
+                            <li><strong>Frontend Interface:</strong> Designed a dynamic single-page dashboard with Tailwind CSS and statistical evaluation charts.</li>
+                        </ul>
+                        
+                        <div class="proj-tags">
+                            <div class="proj-tag">Python & PyTorch</div>
+                            <div class="proj-tag">Hugging Face</div>
+                            <div class="proj-tag">Flask</div>
+                            <div class="proj-tag">Tamil NLP</div>
+                            <div class="proj-tag">Tailwind CSS</div>
+                            <div class="proj-tag">Transformers</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="proj-card">
+                    <div class="proj-image-wrap">
+                        <img src="assets/pj img/Learnhub.png" alt="Learn Hub Platform">
+                    </div>
+                    <div class="proj-content">
+                        <div class="proj-header">
+                            <div class="proj-title">Learn Hub: An E-Learning Platform</div>
+                            <div class="proj-meta">Jan 2025 – Apr 2025</div>
+                        </div>
+                        <div class="proj-sub">Associated with Central Polytechnic College Chennai</div>
+                        
+                        <p class="proj-desc">
+                            Designed and developed a comprehensive E-Learning platform architecture to facilitate seamless educational material distribution, robust user management, and dynamic course hosting capabilities.
+                        </p>
+                        
+                        <div class="proj-tags">
+                            <div class="proj-tag">PHP</div>
+                            <div class="proj-tag">MySQL</div>
+                            <div class="proj-tag">HTML5 & CSS3</div>
+                            <div class="proj-tag">Web Hosting</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         EDUCATION SECTION
+    ══════════════════════════════════ -->
+    <section id="education" style="padding: 100px max(24px, 6vw); background: #ffffff; position: relative; z-index: 1;">
+        <div style="max-width: 900px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 64px;">
+                <h2 style="font-size: clamp(2.5rem, 4vw, 3.5rem); font-weight: 800; color: #111; margin-bottom: 16px; letter-spacing: -0.02em;">
+                    Educational <span style="background: linear-gradient(135deg, #078EFA, #AD89EB); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Journey</span>
+                </h2>
+                <p style="color: #555; font-size: 1.1rem; max-width: 600px; margin: 0 auto;">
+                    My academic foundation in computer technology.
+                </p>
+            </div>
+
+            <style>
+                .edu-timeline { position: relative; padding-left: 48px; }
+                .edu-timeline::before {
+                    content: ''; position: absolute; left: 8px; top: 12px; bottom: 0;
+                    width: 2px; background: linear-gradient(180deg, rgba(7, 142, 250, 0.4) 0%, rgba(173, 137, 235, 0.4) 100%);
+                }
+                .edu-item {
+                    position: relative; margin-bottom: 56px;
+                }
+                .edu-item:last-child { margin-bottom: 0; }
+                .edu-dot {
+                    position: absolute; left: -46.5px; top: 8px;
+                    width: 14px; height: 14px; border-radius: 50%;
+                    background: #078EFA;
+                    box-shadow: 0 0 12px rgba(7, 142, 250, 0.4), 0 0 0 6px rgba(7, 142, 250, 0.15);
+                    transition: background 0.3s, box-shadow 0.3s;
+                }
+                .edu-item:last-child .edu-dot {
+                    background: #AD89EB;
+                    box-shadow: 0 0 12px rgba(173, 137, 235, 0.4), 0 0 0 6px rgba(173, 137, 235, 0.15);
+                }
+                
+                .edu-card {
+                    background: #ffffff;
+                    border: 1px solid rgba(0, 0, 0, 0.08);
+                    border-radius: 24px;
+                    padding: 40px;
+                    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+                    box-shadow: 0 12px 32px rgba(0,0,0,0.04);
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 24px;
+                }
+                .edu-card:hover {
+                    transform: translateX(12px) translateY(-4px);
+                    box-shadow: 0 24px 48px rgba(0,0,0,0.08), 0 0 24px rgba(7, 142, 250, 0.05);
+                }
+                @media (max-width: 600px) {
+                    .edu-card { flex-direction: column; align-items: center; text-align: center; }
+                }
+                
+                .edu-logo {
+                    width: 80px; height: 80px;
+                    border-radius: 16px;
+                    object-fit: contain;
+                    background: #fff;
+                    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+                    flex-shrink: 0;
+                    padding: 8px;
+                    border: 1px solid rgba(0,0,0,0.05);
+                }
+                .edu-content { flex: 1; width: 100%; }
+
+                .edu-inst {
+                    font-size: 22px; font-weight: 800; color: #111; margin-bottom: 8px; letter-spacing: -0.01em;
+                    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;
+                }
+                .edu-date {
+                    font-size: 13px; font-weight: 700; color: #555; background: #f4f4f4; 
+                    padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(0,0,0,0.05);
+                }
+                .edu-deg {
+                    display: inline-block;
+                    font-size: 14px; font-weight: 700; color: #078EFA; margin-bottom: 16px;
+                    padding: 6px 14px; border-radius: 8px; background: rgba(7, 142, 250, 0.08);
+                }
+                .edu-item:last-child .edu-deg {
+                    color: #AD89EB; background: rgba(173, 137, 235, 0.08);
+                }
+                
+                .edu-desc {
+                    color: #555; font-size: 15px; line-height: 1.6;
+                }
+
+                /* Academic Pictures Gallery */
+                .edu-gallery {
+                    margin-top: 24px;
+                    display: flex;
+                    gap: 12px;
+                    flex-wrap: wrap;
+                }
+                .edu-gallery img {
+                    height: 90px;
+                    border-radius: 10px;
+                    object-fit: cover;
+                    border: 1px solid rgba(0,0,0,0.08);
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                    background: #f4f4f4;
+                }
+                .edu-gallery img:hover {
+                    transform: scale(1.05);
+                    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+                    z-index: 10;
+                }
+                @media (max-width: 600px) {
+                    .edu-gallery { justify-content: center; }
+                    .edu-gallery img { height: 70px; }
+                }
+            </style>
+
+            <div class="edu-timeline">
+                <div class="edu-item">
+                    <div class="edu-dot"></div>
+                    <div class="edu-card">
+                        <img class="edu-logo" src="assets/College & Academic logo/CPT-NOBG.png" alt="CPT Logo">
+                        <div class="edu-content">
+                            <div class="edu-inst">
+                                Central Polytechnic College (CPT)
+                                <span class="edu-date">2023 - 2026</span>
+                            </div>
+                            <div class="edu-deg">Diploma in Computer Technology</div>
+                            <div class="edu-desc">Developed comprehensive hands-on experience and foundational knowledge in computer hardware, software engineering, and core programming languages.</div>
+                            
+                            <div class="edu-gallery">
+                                <img src="assets/acadamic pics/cpt 1.jpg" alt="CPT Campus">
+                                <img src="assets/acadamic pics/cpt2.jpeg" alt="CPT Campus">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="edu-item">
+                    <div class="edu-dot"></div>
+                    <div class="edu-card">
+                        <img class="edu-logo" src="assets/College & Academic logo/MMHS.jpg" alt="MMHS Logo">
+                        <div class="edu-content">
+                            <div class="edu-inst">
+                                Manuel Mony Matric Hr Sec School
+                                <span class="edu-date">2022 - 2023</span>
+                            </div>
+                            <div class="edu-deg">10th Standard (SSLC)</div>
+                            <div class="edu-desc">Built a strong academic foundation with a focus on science and mathematics, fostering a passion for analytical problem solving.</div>
+                            
+                            <div class="edu-gallery">
+                                <img src="assets/acadamic pics/mmhs-1.png" alt="MMHS Student Life">
+                                <img src="assets/acadamic pics/mmhs-2.webp" alt="MMHS Student Life">
+                                <img src="assets/acadamic pics/mmhs-3.jpg" alt="MMHS Student Life">
+                                <img src="assets/acadamic pics/mmhs-4.jpg" alt="MMHS Student Life">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ══════════════════════════════════
+         MULTI-MEDIA SYNC SECTION
+    ══════════════════════════════════ -->
+    <section id="multimedia-sync">
+        <style>
+            #multimedia-sync {
+                padding: 100px max(24px, 6vw) 100px;
+                background: 
+                    linear-gradient(rgba(5, 7, 10, 0.8), rgba(5, 7, 10, 0.9)),
+                    url('assets/tech\ background/HD\ wallpaper_\ vector\ art,\ neon,\ Retro\ style,\ abstract.jpg') center/cover no-repeat fixed;
+                position: relative;
+                overflow: hidden;
+            }
+
+            /* Reduced glows to let background shine */
+            .mm-glow-1 {
+                position: absolute;
+                top: -10%; left: -5%;
+                width: 500px; height: 500px;
+                background: radial-gradient(circle, rgba(7, 142, 250, 0.05) 0%, transparent 70%);
+                filter: blur(80px); pointer-events: none; z-index: 0;
+            }
+            .mm-glow-2 {
+                position: absolute;
+                bottom: -10%; right: -5%;
+                width: 600px; height: 600px;
+                background: radial-gradient(circle, rgba(173, 137, 235, 0.04) 0%, transparent 70%);
+                filter: blur(80px); pointer-events: none; z-index: 0;
+            }
+
+            .mm-inner {
+                max-width: 1240px;
+                margin: 0 auto;
+                position: relative;
+                z-index: 2;
+            }
+
+            .mm-header {
+                text-align: center;
+                margin-bottom: 64px;
+            }
+            .mm-eyebrow {
+                display: inline-flex; align-items: center; gap: 8px;
+                font-size: 11px; font-weight: 600; letter-spacing: .12em;
+                text-transform: uppercase; color: #078EFA;
+                margin-bottom: 16px;
+            }
+            .mm-eyebrow-line { width: 32px; height: 1.5px; background: #078EFA; border-radius: 2px; }
+            .mm-headline {
+                font-size: clamp(2rem, 3.5vw, 2.9rem);
+                font-weight: 900; line-height: 1.1; letter-spacing: -.03em;
+                color: #ffffff;
+            }
+            .mm-headline span {
+                background: linear-gradient(135deg, #078EFA, #AD89EB);
+                -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            }
+
+            .mm-subsection { margin-bottom: 80px; }
+            .mm-sub-title {
+                display: flex; align-items: center; gap: 12px;
+                font-size: 22px; font-weight: 700; color: #fff;
+                margin-bottom: 32px;
+            }
+            .mm-sub-icon {
+                display: flex; align-items: center; justify-content: center;
+                width: 36px; height: 36px; border-radius: 10px;
+                background: rgba(7, 142, 250, 0.15);
+                color: #078EFA; font-size: 18px;
+            }
+
+            /* ── Shorts Row (Horizontal Scroll) ── */
+            .shorts-row {
+                display: flex; gap: 20px;
+                overflow-x: auto;
+                padding-bottom: 24px;
+                scroll-snap-type: x mandatory;
+                scrollbar-width: thin;
+                scrollbar-color: rgba(7, 142, 250, 0.4) rgba(255,255,255,0.05);
+            }
+            .shorts-row::-webkit-scrollbar { height: 8px; }
+            .shorts-row::-webkit-scrollbar-track { background: rgba(255,255,255,0.05); border-radius: 4px; }
+            .shorts-row::-webkit-scrollbar-thumb { background: rgba(7, 142, 250, 0.4); border-radius: 4px; }
+
+            .short-card {
+                flex: 0 0 200px;
+                height: 355px;
+                border-radius: 20px;
+                overflow: hidden;
+                position: relative;
+                scroll-snap-align: start;
+                background: #111;
+                border: 1px solid rgba(7, 142, 250, 0.15);
+                transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+                display: block; text-decoration: none;
+            }
+            .short-card:hover {
+                transform: translateY(-6px);
+                border-color: rgba(7, 142, 250, 0.4);
+                box-shadow: 0 12px 30px rgba(7, 142, 250, 0.15);
+            }
+            .short-card img {
+                width: 100%; height: 100%;
+                object-fit: cover;
+                transition: transform 0.5s ease, filter 0.3s ease;
+                filter: brightness(0.7);
+            }
+            .short-card:hover img {
+                transform: scale(1.05);
+                filter: brightness(0.9);
+            }
+            .short-overlay {
+                position: absolute; inset: 0;
+                background: linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.9) 100%);
+                display: flex; flex-direction: column; justify-content: flex-end;
+                padding: 20px; pointer-events: none;
+            }
+            .short-title {
+                color: #fff; font-size: 14px; font-weight: 600; line-height: 1.4;
+                text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+                display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+            }
+            .play-btn {
+                position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                width: 48px; height: 48px; border-radius: 50%;
+                background: rgba(7, 142, 250, 0.8); backdrop-filter: blur(4px);
+                display: flex; align-items: center; justify-content: center;
+                opacity: 0; transition: opacity 0.3s ease, transform 0.3s ease;
+            }
+            .short-card:hover .play-btn {
+                opacity: 1; transform: translate(-50%, -50%) scale(1.1);
+            }
+            .play-btn svg { width: 20px; height: 20px; fill: #fff; margin-left: 3px; }
+
+            /* ── Long-form Grid ── */
+            .lf-grid {
+                display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+                gap: 32px;
+            }
+            @media (max-width: 600px) {
+                .lf-grid { grid-template-columns: 1fr; }
+            }
+            .lf-card {
+                display: block; text-decoration: none;
+                border-radius: 24px; overflow: hidden;
+                background: rgba(255,255,255,0.03);
+                border: 1px solid rgba(255,255,255,0.08);
+                transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+            }
+            .lf-card:hover {
+                transform: translateY(-6px);
+                border-color: rgba(173, 137, 235, 0.4);
+                box-shadow: 0 16px 40px rgba(173, 137, 235, 0.1);
+                background: rgba(255,255,255,0.05);
+            }
+            .lf-thumb {
+                width: 100%; aspect-ratio: 16/9; position: relative; overflow: hidden;
+            }
+            .lf-thumb img {
+                width: 100%; height: 100%; object-fit: cover;
+                transition: transform 0.5s ease;
+            }
+            .lf-card:hover .lf-thumb img { transform: scale(1.05); }
+            
+            .lf-thumb::after {
+                content: ''; position: absolute; inset: 0;
+                background: rgba(0,0,0,0.2); transition: background 0.3s;
+            }
+            .lf-card:hover .lf-thumb::after { background: transparent; }
+            
+            .lf-play {
+                position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                width: 64px; height: 64px; border-radius: 50%;
+                background: rgba(255,0,0,0.85); backdrop-filter: blur(4px);
+                display: flex; align-items: center; justify-content: center; z-index: 2;
+                box-shadow: 0 8px 24px rgba(255,0,0,0.3);
+            }
+            .lf-play svg { width: 28px; height: 28px; fill: #fff; margin-left: 4px; }
+
+            .lf-info { padding: 24px; }
+            .lf-title {
+                color: #fff; font-size: 18px; font-weight: 700; line-height: 1.4; margin-bottom: 8px;
+                display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+            }
+            .lf-meta {
+                color: rgba(255,255,255,0.6); font-size: 13px; font-weight: 500;
+                display: flex; align-items: center; gap: 6px;
+            }
+            .lf-meta span {
+                padding: 4px 10px; border-radius: 6px; background: rgba(173, 137, 235, 0.15);
+                color: #AD89EB;
+            }
+        </style>
+
+        <div class="mm-glow-1"></div>
+        <div class="mm-glow-2"></div>
+
+        <div class="mm-inner">
+            <div class="mm-header">
+                <div class="mm-eyebrow">
+                    <span class="mm-eyebrow-line"></span>
+                    Content Hub
+                    <span class="mm-eyebrow-line"></span>
+                </div>
+                <h2 class="mm-headline">Tamil Technology <span>Multi-Media Sync</span></h2>
+            </div>
+
+            <!-- Subsection A: Shorts -->
+            <div class="mm-subsection">
+                <div class="mm-sub-title">
+                    <div class="mm-sub-icon">📱</div>
+                    Concept Explained (Shorts)
+                </div>
+                <div class="shorts-row">
+                    <!-- Cards -->
+                    <a href="https://www.youtube.com/shorts/3dm5jge3SjE" target="_blank" class="short-card">
+                        <img src="https://i.ytimg.com/vi/3dm5jge3SjE/hqdefault.jpg" alt="Cross Platform Development">
+                        <div class="short-overlay"><div class="short-title">Cross Platform Development</div></div>
+                        <div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                    </a>
+                    <a href="https://www.youtube.com/shorts/NHSIEq8c2Jc" target="_blank" class="short-card">
+                        <img src="https://i.ytimg.com/vi/NHSIEq8c2Jc/hqdefault.jpg" alt="DNS Explained">
+                        <div class="short-overlay"><div class="short-title">DNS Explained</div></div>
+                        <div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                    </a>
+                    <a href="https://www.youtube.com/shorts/Fj39Eb0WepU" target="_blank" class="short-card">
+                        <img src="https://i.ytimg.com/vi/Fj39Eb0WepU/hqdefault.jpg" alt="For Loops using Maanaadu">
+                        <div class="short-overlay"><div class="short-title">For Loops using Maanaadu</div></div>
+                        <div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                    </a>
+                    <a href="https://www.youtube.com/shorts/9DePTcbxLRU" target="_blank" class="short-card">
+                        <img src="https://i.ytimg.com/vi/9DePTcbxLRU/hqdefault.jpg" alt="Input Function in Python">
+                        <div class="short-overlay"><div class="short-title">Input Function in Python</div></div>
+                        <div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                    </a>
+                    <a href="https://www.youtube.com/shorts/yGvvb7ePYXc" target="_blank" class="short-card">
+                        <img src="https://i.ytimg.com/vi/yGvvb7ePYXc/hqdefault.jpg" alt="While Loops in Python">
+                        <div class="short-overlay"><div class="short-title">While Loops in Python</div></div>
+                        <div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                    </a>
+                    <a href="https://www.youtube.com/shorts/QEltwTJ9MGw" target="_blank" class="short-card">
+                        <img src="https://i.ytimg.com/vi/QEltwTJ9MGw/hqdefault.jpg" alt="FOR LOOPS vs WHILE LOOPS">
+                        <div class="short-overlay"><div class="short-title">FOR LOOPS vs WHILE LOOPS</div></div>
+                        <div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                    </a>
+                    <a href="https://www.youtube.com/shorts/OIC2oXDsE8E" target="_blank" class="short-card">
+                        <img src="https://i.ytimg.com/vi/OIC2oXDsE8E/hqdefault.jpg" alt="Class and Objects Explained">
+                        <div class="short-overlay"><div class="short-title">Class and Objects Explained</div></div>
+                        <div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                    </a>
+                    <a href="https://www.youtube.com/shorts/fJ5H2rV487g" target="_blank" class="short-card">
+                        <img src="https://i.ytimg.com/vi/fJ5H2rV487g/hqdefault.jpg" alt="Docker Explained">
+                        <div class="short-overlay"><div class="short-title">Docker Explained</div></div>
+                        <div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                    </a>
+                    <a href="https://www.youtube.com/shorts/-wsMiPw9BPY" target="_blank" class="short-card">
+                        <img src="https://i.ytimg.com/vi/-wsMiPw9BPY/hqdefault.jpg" alt="What is Git">
+                        <div class="short-overlay"><div class="short-title">What is Git</div></div>
+                        <div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                    </a>
+                    <a href="https://www.youtube.com/shorts/rKUNlpFwVTI" target="_blank" class="short-card">
+                        <img src="https://i.ytimg.com/vi/rKUNlpFwVTI/hqdefault.jpg" alt="Git vs GitHub">
+                        <div class="short-overlay"><div class="short-title">Git vs GitHub</div></div>
+                        <div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                    </a>
+                    <a href="https://www.youtube.com/shorts/N8HL86-Wx_k" target="_blank" class="short-card">
+                        <img src="https://i.ytimg.com/vi/N8HL86-Wx_k/hqdefault.jpg" alt="Docker Vs GitHub">
+                        <div class="short-overlay"><div class="short-title">Docker Vs GitHub</div></div>
+                        <div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                    </a>
+                    <a href="https://www.youtube.com/shorts/jbM1tFh0PEE" target="_blank" class="short-card">
+                        <img src="https://i.ytimg.com/vi/jbM1tFh0PEE/hqdefault.jpg" alt="Cloud Computing">
+                        <div class="short-overlay"><div class="short-title">Cloud Computing</div></div>
+                        <div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                    </a>
+                    <a href="https://www.youtube.com/shorts/Swb8CEAuJ08" target="_blank" class="short-card">
+                        <img src="https://i.ytimg.com/vi/Swb8CEAuJ08/hqdefault.jpg" alt="API Explained">
+                        <div class="short-overlay"><div class="short-title">API Explained</div></div>
+                        <div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                    </a>
+                    <a href="https://www.youtube.com/shorts/ar7CEAOdm28" target="_blank" class="short-card">
+                        <img src="https://i.ytimg.com/vi/ar7CEAOdm28/hqdefault.jpg" alt="Internet of Things (IoT)">
+                        <div class="short-overlay"><div class="short-title">Internet of Things (IoT)</div></div>
+                        <div class="play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Subsection B: Long-form -->
+            <div class="mm-subsection" style="margin-bottom:0;">
+                <div class="mm-sub-title">
+                    <div class="mm-sub-icon" style="background: rgba(173, 137, 235, 0.15); color: #AD89EB;">▶️</div>
+                    Recent Long-Form Series
+                </div>
+                <div class="lf-grid">
+                    <a href="https://www.youtube.com/watch?v=4Pz9ZTbcSF0" target="_blank" class="lf-card">
+                        <div class="lf-thumb">
+                            <img src="https://i.ytimg.com/vi/4Pz9ZTbcSF0/maxresdefault.jpg" alt="Replit AI - Codingக்கு The End?">
+                            <div class="lf-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        </div>
+                        <div class="lf-info">
+                            <div class="lf-title">Replit AI - Codingக்கு The End?</div>
+                            <div class="lf-meta"><span>Tutorial</span> Tamil Technology</div>
+                        </div>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=H0d6cBl8b1s" target="_blank" class="lf-card">
+                        <div class="lf-thumb">
+                            <img src="https://i.ytimg.com/vi/H0d6cBl8b1s/maxresdefault.jpg" alt="Network Vs Internet Explained">
+                            <div class="lf-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        </div>
+                        <div class="lf-info">
+                            <div class="lf-title">Network Vs Internet Explained</div>
+                            <div class="lf-meta"><span>Concept</span> Tamil Technology</div>
+                        </div>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=Nb9kMm0CIAo" target="_blank" class="lf-card">
+                        <div class="lf-thumb">
+                            <img src="https://i.ytimg.com/vi/Nb9kMm0CIAo/maxresdefault.jpg" alt="Java Programming Explained in Tamil">
+                            <div class="lf-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        </div>
+                        <div class="lf-info">
+                            <div class="lf-title">Java Programming Explained in Tamil</div>
+                            <div class="lf-meta"><span>Masterclass</span> Tamil Technology</div>
+                        </div>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=fXWR_XWpJ-Q" target="_blank" class="lf-card">
+                        <div class="lf-thumb">
+                            <img src="https://i.ytimg.com/vi/fXWR_XWpJ-Q/maxresdefault.jpg" alt="Python AI Bootcamp 2026 (AI Chatbot)">
+                            <div class="lf-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        </div>
+                        <div class="lf-info">
+                            <div class="lf-title">Python AI Bootcamp 2026 (AI Chatbot)</div>
+                            <div class="lf-meta"><span>Bootcamp</span> Tamil Technology</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         TAMIL VARALARU SYNC SECTION
+    ══════════════════════════════════ -->
+    <section id="varalaru-sync">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Great+Vibes&family=Montserrat:wght@700&display=swap');
+
+            #varalaru-sync {
+                padding: 100px max(24px, 6vw) 100px;
+                position: relative;
+                overflow: hidden;
+                background: #fdfbf7; /* Fallback light historic bg */
+            }
+
+            .tv-bg-video {
+                position: absolute;
+                top: 50%; left: 50%;
+                width: 100%; height: 100%;
+                object-fit: cover;
+                transform: translate(-50%, -50%);
+                z-index: 0;
+            }
+            .tv-bg-overlay {
+                position: absolute; inset: 0;
+                background: linear-gradient(180deg, rgba(253, 251, 247, 0.9) 0%, rgba(253, 251, 247, 0.3) 100%);
+                z-index: 1;
+            }
+
+            .tv-inner {
+                max-width: 1240px;
+                margin: 0 auto;
+                position: relative;
+                z-index: 2;
+            }
+
+            .tv-header {
+                text-align: center;
+                margin-bottom: 64px;
+            }
+            .tv-eyebrow {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 13px; font-weight: 700; letter-spacing: 0.25em;
+                text-transform: uppercase; color: #B38F56;
+                margin-bottom: 8px;
+                display: block;
+            }
+            .tv-headline-cursive {
+                font-family: 'Great Vibes', cursive;
+                font-size: clamp(2.5rem, 4vw, 3.5rem);
+                color: #231F20;
+                margin-bottom: -15px; /* Pull the block title closer */
+                position: relative;
+                z-index: 2;
+            }
+            .tv-headline-block {
+                font-family: 'Bebas Neue', sans-serif;
+                font-size: clamp(4rem, 8vw, 7rem);
+                line-height: 0.85;
+                color: #B38F56;
+                text-transform: uppercase;
+                text-shadow: 2px 4px 12px rgba(0,0,0,0.05);
+            }
+
+            .tv-subsection { margin-bottom: 80px; }
+            .tv-sub-title {
+                display: flex; align-items: center; gap: 12px;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 20px; font-weight: 700; color: #231F20;
+                text-transform: uppercase; letter-spacing: 0.05em;
+                margin-bottom: 32px;
+            }
+            .tv-sub-icon {
+                display: flex; align-items: center; justify-content: center;
+                width: 36px; height: 36px; border-radius: 8px;
+                background: rgba(179, 143, 86, 0.15);
+                color: #B38F56; font-size: 18px;
+            }
+
+            /* ── Shorts Row ── */
+            .tv-shorts-row {
+                display: flex; gap: 24px;
+                overflow-x: auto;
+                padding-bottom: 24px;
+                scroll-snap-type: x mandatory;
+                scrollbar-width: thin;
+                scrollbar-color: #B38F56 rgba(0,0,0,0.05);
+            }
+            .tv-shorts-row::-webkit-scrollbar { height: 8px; }
+            .tv-shorts-row::-webkit-scrollbar-track { background: rgba(0,0,0,0.05); border-radius: 4px; }
+            .tv-shorts-row::-webkit-scrollbar-thumb { background: #B38F56; border-radius: 4px; }
+
+            .tv-short-card {
+                flex: 0 0 220px;
+                height: 390px;
+                border-radius: 16px;
+                overflow: hidden;
+                position: relative;
+                scroll-snap-align: start;
+                background: #fff;
+                border: 2px solid rgba(179, 143, 86, 0.3);
+                box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+                transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+                display: block; text-decoration: none;
+            }
+            .tv-short-card:hover {
+                transform: translateY(-8px);
+                border-color: #B38F56;
+                box-shadow: 0 16px 40px rgba(179, 143, 86, 0.2);
+            }
+            .tv-short-card img {
+                width: 100%; height: 100%;
+                object-fit: cover;
+                transition: transform 0.6s ease;
+            }
+            .tv-short-card:hover img { transform: scale(1.06); }
+            
+            .tv-short-overlay {
+                position: absolute; inset: 0;
+                background: linear-gradient(180deg, transparent 40%, rgba(35, 31, 32, 0.95) 100%);
+                display: flex; flex-direction: column; justify-content: flex-end;
+                padding: 24px 20px; pointer-events: none;
+            }
+            .tv-short-title {
+                font-family: 'Montserrat', sans-serif;
+                color: #fff; font-size: 14px; font-weight: 700; line-height: 1.4;
+                display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+            }
+            .tv-play-btn {
+                position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                width: 54px; height: 54px; border-radius: 50%;
+                background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(4px);
+                display: flex; align-items: center; justify-content: center;
+                opacity: 0; transition: opacity 0.3s ease, transform 0.3s ease;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            }
+            .tv-short-card:hover .tv-play-btn {
+                opacity: 1; transform: translate(-50%, -50%) scale(1.1);
+            }
+            .tv-play-btn svg { width: 22px; height: 22px; fill: #B38F56; margin-left: 3px; }
+
+            /* ── Long-form Grid ── */
+            .tv-lf-grid {
+                display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+                gap: 32px;
+            }
+            @media (max-width: 600px) { .tv-lf-grid { grid-template-columns: 1fr; } }
+            
+            .tv-lf-card {
+                display: flex; flex-direction: column; text-decoration: none;
+                border-radius: 16px; overflow: hidden;
+                background: #fff;
+                border: 1px solid rgba(179, 143, 86, 0.2);
+                box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+            .tv-lf-card:hover {
+                transform: translateY(-6px);
+                box-shadow: 0 16px 36px rgba(179, 143, 86, 0.15);
+            }
+            .tv-lf-thumb {
+                width: 100%; aspect-ratio: 16/9; position: relative; overflow: hidden;
+            }
+            .tv-lf-thumb img {
+                width: 100%; height: 100%; object-fit: cover;
+                transition: transform 0.6s ease;
+            }
+            .tv-lf-card:hover .tv-lf-thumb img { transform: scale(1.05); }
+            
+            .tv-lf-thumb::after {
+                content: ''; position: absolute; inset: 0;
+                background: rgba(35, 31, 32, 0.1); transition: background 0.3s;
+            }
+            .tv-lf-card:hover .tv-lf-thumb::after { background: transparent; }
+            
+            .tv-lf-play {
+                position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                width: 64px; height: 64px; border-radius: 50%;
+                background: #B38F56;
+                display: flex; align-items: center; justify-content: center; z-index: 2;
+                box-shadow: 0 8px 24px rgba(179, 143, 86, 0.4);
+                transition: transform 0.3s ease;
+            }
+            .tv-lf-card:hover .tv-lf-play { transform: translate(-50%, -50%) scale(1.1); }
+            .tv-lf-play svg { width: 28px; height: 28px; fill: #fff; margin-left: 4px; }
+
+            .tv-lf-info { padding: 24px; flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
+            .tv-lf-title {
+                color: #231F20; font-family: 'Montserrat', sans-serif; font-size: 17px; font-weight: 700; line-height: 1.5; margin-bottom: 12px;
+                display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+            }
+            .tv-lf-meta {
+                color: rgba(35, 31, 32, 0.6); font-size: 13px; font-weight: 600;
+                display: flex; align-items: center; gap: 8px;
+            }
+            .tv-lf-meta span {
+                padding: 4px 10px; border-radius: 4px; background: rgba(179, 143, 86, 0.1);
+                color: #B38F56; text-transform: uppercase; font-size: 11px; letter-spacing: 0.05em;
+            }
+        </style>
+
+        <!-- Video Background -->
+        <video autoplay loop muted playsinline class="tv-bg-video">
+            <source src="assets/History Background/913c161e66a65ab0197dabe80324f1ce - ROTATE - Videobolt (online-video-cutter.com).mp4" type="video/mp4">
+        </video>
+        <div class="tv-bg-overlay"></div>
+
+        <div class="tv-inner">
+            <div class="tv-header">
+                <span class="tv-eyebrow">Discover Our Heritage</span>
+                <div class="tv-headline-cursive">The Thanjavur Files & more</div>
+                <div class="tv-headline-block">Tamil Varalaru Sync Engine</div>
+            </div>
+
+            <!-- Subsection A: Shorts -->
+            <div class="tv-subsection">
+                <div class="tv-sub-title">
+                    <div class="tv-sub-icon">🏛️</div>
+                    Cultural Briefs (Shorts)
+                </div>
+                <div class="tv-shorts-row">
+                    <!-- Cards -->
+                    <a href="https://www.youtube.com/shorts/0NqGoNISE0Y" target="_blank" class="tv-short-card">
+                        <img src="https://i.ytimg.com/vi/0NqGoNISE0Y/hqdefault.jpg" alt="ராஜராஜ சோழன் 1040வது சதய விழா Tribute">
+                        <div class="tv-short-overlay"><div class="tv-short-title">ராஜராஜ சோழன் 1040வது சதய விழா Tribute</div></div>
+                        <div class="tv-play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                    </a>
+                    <a href="https://www.youtube.com/shorts/7vd7JcWO2VY" target="_blank" class="tv-short-card">
+                        <img src="https://i.ytimg.com/vi/7vd7JcWO2VY/hqdefault.jpg" alt="First Murugan Temple">
+                        <div class="tv-short-overlay"><div class="tv-short-title">First Murugan Temple</div></div>
+                        <div class="tv-play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                    </a>
+                    <a href="https://www.youtube.com/shorts/-IJYTRiVNXw" target="_blank" class="tv-short-card">
+                        <img src="https://i.ytimg.com/vi/-IJYTRiVNXw/hqdefault.jpg" alt="Nadavavi Kinaru (நடவாவி கிணறு)">
+                        <div class="tv-short-overlay"><div class="tv-short-title">Nadavavi Kinaru (நடவாவி கிணறு)</div></div>
+                        <div class="tv-play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                    </a>
+                    <a href="https://www.youtube.com/shorts/Vg_LZ7iEWBI" target="_blank" class="tv-short-card">
+                        <img src="https://i.ytimg.com/vi/Vg_LZ7iEWBI/hqdefault.jpg" alt="Soora Samharam Shorts 2">
+                        <div class="tv-short-overlay"><div class="tv-short-title">Soora Samharam Shorts 2</div></div>
+                        <div class="tv-play-btn"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Subsection B: Long-form -->
+            <div class="tv-subsection" style="margin-bottom:0;">
+                <div class="tv-sub-title">
+                    <div class="tv-sub-icon">📜</div>
+                    Historical Long-Form Documentaries
+                </div>
+                <div class="tv-lf-grid">
+                    <a href="https://www.youtube.com/watch?v=HUnPh0owd8Q" target="_blank" class="tv-lf-card">
+                        <div class="tv-lf-thumb">
+                            <img src="https://i.ytimg.com/vi/HUnPh0owd8Q/maxresdefault.jpg" alt="The Thanjavur Files - Ep 1">
+                            <div class="tv-lf-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        </div>
+                        <div class="tv-lf-info">
+                            <div class="tv-lf-title">The Thanjavur Files - Ep 1 (ராஜராஜ சோழனின் உண்மையான முகம்)</div>
+                            <div class="tv-lf-meta"><span>Documentary</span> History</div>
+                        </div>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=KtcEwrTLBiY" target="_blank" class="tv-lf-card">
+                        <div class="tv-lf-thumb">
+                            <img src="https://i.ytimg.com/vi/KtcEwrTLBiY/maxresdefault.jpg" alt="MADRAS ரகசியம்">
+                            <div class="tv-lf-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        </div>
+                        <div class="tv-lf-info">
+                            <div class="tv-lf-title">MADRAS ரகசியம் (Victoria Public Hall History)</div>
+                            <div class="tv-lf-meta"><span>Architecture</span> History</div>
+                        </div>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=zK7739_NAZM" target="_blank" class="tv-lf-card">
+                        <div class="tv-lf-thumb">
+                            <img src="https://i.ytimg.com/vi/zK7739_NAZM/maxresdefault.jpg" alt="My Real Kula Daivam Search">
+                            <div class="tv-lf-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        </div>
+                        <div class="tv-lf-info">
+                            <div class="tv-lf-title">My Real Kula Daivam Search</div>
+                            <div class="tv-lf-meta"><span>Vlog</span> History</div>
+                        </div>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=qMh_xvv6-dY" target="_blank" class="tv-lf-card">
+                        <div class="tv-lf-thumb">
+                            <img src="https://i.ytimg.com/vi/qMh_xvv6-dY/maxresdefault.jpg" alt="மாமல்லபுரத்தில் உலகின் முதல் முருகன் கோவில்">
+                            <div class="tv-lf-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        </div>
+                        <div class="tv-lf-info">
+                            <div class="tv-lf-title">மாமல்லபுரத்தில் உலகின் முதல் முருகன் கோவில் (Seyon Temple)</div>
+                            <div class="tv-lf-meta"><span>Exploration</span> History</div>
+                        </div>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=289-Q82VVlk" target="_blank" class="tv-lf-card">
+                        <div class="tv-lf-thumb">
+                            <img src="https://i.ytimg.com/vi/289-Q82VVlk/maxresdefault.jpg" alt="1000 வருடம் பழமையான நடவாவி கிணற்றின் மர்மம்">
+                            <div class="tv-lf-play"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+                        </div>
+                        <div class="tv-lf-info">
+                            <div class="tv-lf-title">1000 வருடம் பழமையான நடவாவி கிணற்றின் மர்மம்</div>
+                            <div class="tv-lf-meta"><span>Mystery</span> History</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ══════════════════════════════════
+         EVENTS SECTION
+    ══════════════════════════════════ -->
+    <section id="events" style="padding: 100px max(24px, 6vw); background: #080b12; position: relative; overflow: hidden; z-index: 1;">
+        <div style="max-width: 1400px; margin: 0 auto; position: relative;">
+            <div style="text-align: center; margin-bottom: 64px;">
+                <h2 style="font-size: clamp(2.5rem, 4vw, 3.5rem); font-weight: 800; color: #fff; margin-bottom: 16px; letter-spacing: -0.02em;">
+                    Featured <span style="background: linear-gradient(135deg, #078EFA, #AD89EB); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Events</span>
+                </h2>
+                <p style="color: rgba(255,255,255,0.6); font-size: 1.1rem; max-width: 600px; margin: 0 auto;">
+                    Highlights from recent summits, bootcamps, and core tracks.
+                </p>
+            </div>
+
+            <style>
+                .events-slider-wrap {
+                    position: relative;
+                    width: 100%;
+                    overflow: hidden;
+                    padding: 24px 0 64px;
+                    -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 15%, #000 85%, transparent 100%);
+                    mask-image: linear-gradient(90deg, transparent 0%, #000 15%, #000 85%, transparent 100%);
+                }
+                .events-slider {
+                    display: flex;
+                    gap: 32px;
+                    width: max-content;
+                    animation: events-scroll 25s linear infinite;
+                    will-change: transform;
+                }
+                .events-slider:hover {
+                    animation-play-state: paused;
+                }
+                @keyframes events-scroll {
+                    0% { transform: translateX(0); }
+                    100% { transform: translateX(calc(-50% - 16px)); }
+                }
+                
+                .event-card {
+                    width: min(70vw, 550px);
+                    flex-shrink: 0;
+                    border-radius: 24px;
+                    overflow: hidden;
+                    position: relative;
+                    aspect-ratio: 16/9;
+                    background: rgba(255, 255, 255, 0.03);
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+                    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+                    cursor: pointer;
+                }
+                .event-card:hover {
+                    transform: translateY(-8px) scale(1.02);
+                    box-shadow: 0 24px 60px rgba(7, 142, 250, 0.2);
+                    border-color: rgba(7, 142, 250, 0.4);
+                }
+                .event-card img {
+                    width: 100%; height: 100%;
+                    object-fit: cover;
+                    transition: transform 0.7s ease;
+                }
+                .event-card:hover img {
+                    transform: scale(1.05);
+                }
+                .event-overlay {
+                    position: absolute;
+                    inset: 0;
+                    background: linear-gradient(180deg, transparent 40%, rgba(8, 11, 18, 0.95) 100%);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    padding: 32px;
+                    pointer-events: none;
+                }
+                .event-title {
+                    font-size: 24px;
+                    font-weight: 800;
+                    color: #fff;
+                    letter-spacing: -0.01em;
+                    transform: translateY(10px);
+                    opacity: 0.9;
+                    transition: transform 0.4s ease, opacity 0.4s ease;
+                }
+                .event-card:hover .event-title {
+                    transform: translateY(0);
+                    opacity: 1;
+                    color: #078EFA;
+                }
+            </style>
+
+            <div class="events-slider-wrap">
+                <div class="events-slider">
+                    <!-- SET A -->
+                    <div class="event-card">
+                        <img src="assets/events/Agentic AI Workshop Anna University.jpg" alt="Agentic AI Workshop Anna University">
+                        <div class="event-overlay">
+                            <div class="event-title">Agentic AI Workshop Anna University</div>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="assets/events/BOSS OS Bug Bounty.jpeg" alt="BOSS OS Bug Bounty">
+                        <div class="event-overlay">
+                            <div class="event-title">BOSS OS Bug Bounty</div>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="assets/events/CPT KALLORI KALI THIRUVIZA (Digital Poster Making).jpg" alt="CPT KALLORI KALI THIRUVIZA (Digital Poster Making)">
+                        <div class="event-overlay">
+                            <div class="event-title">CPT KALLORI KALI THIRUVIZA (Digital Poster Making)</div>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="assets/events/VIT BOSS OS BUg Bounty Event.jpeg" alt="VIT BOSS OS BUg Bounty Event">
+                        <div class="event-overlay">
+                            <div class="event-title">VIT BOSS OS BUg Bounty Event</div>
+                        </div>
+                    </div>
+                    
+                    <!-- SET B -->
+                    <div class="event-card">
+                        <img src="assets/events/Agentic AI Workshop Anna University.jpg" alt="Agentic AI Workshop Anna University">
+                        <div class="event-overlay">
+                            <div class="event-title">Agentic AI Workshop Anna University</div>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="assets/events/BOSS OS Bug Bounty.jpeg" alt="BOSS OS Bug Bounty">
+                        <div class="event-overlay">
+                            <div class="event-title">BOSS OS Bug Bounty</div>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="assets/events/CPT KALLORI KALI THIRUVIZA (Digital Poster Making).jpg" alt="CPT KALLORI KALI THIRUVIZA (Digital Poster Making)">
+                        <div class="event-overlay">
+                            <div class="event-title">CPT KALLORI KALI THIRUVIZA (Digital Poster Making)</div>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <img src="assets/events/VIT BOSS OS BUg Bounty Event.jpeg" alt="VIT BOSS OS BUg Bounty Event">
+                        <div class="event-overlay">
+                            <div class="event-title">VIT BOSS OS BUg Bounty Event</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ══════════════════════════════════
+         TESTIMONIALS SECTION
+    ══════════════════════════════════ -->
+    <section id="testimonials">
+        <style>
+            #testimonials {
+                padding: 100px max(24px, 6vw) 120px;
+                background: #080b12; /* Sudden dark background */
+                position: relative;
+                overflow: hidden;
+            }
+
+            .testimonials-inner {
+                max-width: 1240px;
+                margin: 0 auto;
+                position: relative;
+                z-index: 2;
+            }
+
+            .test-header {
+                text-align: center;
+                margin-bottom: 60px;
+            }
+
+            .test-eyebrow {
+                display: inline-flex; align-items: center; gap: 8px;
+                font-size: 11px; font-weight: 600; letter-spacing: .12em;
+                text-transform: uppercase; color: #fff;
+                opacity: 0.7;
+                margin-bottom: 16px;
+            }
+            .test-eyebrow-line {
+                width: 32px; height: 1.5px; background: #fff; border-radius: 2px;
+            }
+
+            .test-headline {
+                font-size: clamp(2rem, 3.5vw, 2.9rem);
+                font-weight: 900; line-height: 1.1; letter-spacing: -.03em;
+                color: #ffffff;
+            }
+
+            .test-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 40px;
+            }
+
+            @media (max-width: 960px) {
+                .test-grid { grid-template-columns: 1fr; gap: 60px; }
+            }
+
+            /* ── Common Card Styles ── */
+            .test-col-header {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                margin-bottom: 32px;
+            }
+            .test-col-title {
+                font-size: 24px;
+                font-weight: 800;
+                letter-spacing: -0.02em;
+            }
+            .test-col {
+                padding: 40px;
+                border-radius: 32px;
+                position: relative;
+                overflow: hidden;
+            }
+            .test-marquee-wrap {
+                position: relative;
+                height: 540px;
+                overflow: hidden;
+                -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 15%, #000 85%, transparent 100%);
+                mask-image: linear-gradient(180deg, transparent 0%, #000 15%, #000 85%, transparent 100%);
+            }
+            .test-marquee {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                animation: test-scroll-y 30s linear infinite;
+                will-change: transform;
+            }
+            .test-marquee:hover { animation-play-state: paused; }
+            .test-marquee.reverse { animation-direction: reverse; }
+            
+            @keyframes test-scroll-y {
+                0% { transform: translateY(0); }
+                100% { transform: translateY(calc(-50% - 10px)); }
+            }
+            .t-card {
+                padding: 24px;
+                border-radius: 20px;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                transition: transform 0.3s ease;
+            }
+            .t-card:hover {
+                transform: translateY(-4px);
+            }
+            .t-user {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+            }
+            .t-avatar {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 16px;
+                font-weight: 700;
+                color: #fff;
+                flex-shrink: 0;
+            }
+            .t-name {
+                font-size: 14px;
+                font-weight: 600;
+                color: #fff;
+            }
+            .t-rating {
+                font-size: 12px;
+                color: #FFD700;
+                letter-spacing: 2px;
+                margin-top: 4px;
+            }
+            .t-text {
+                font-size: 14px;
+                line-height: 1.6;
+                color: rgba(255, 255, 255, 0.85);
+            }
+
+            /* ── Tech Side (Tamil Technology) ── */
+            .tech-side {
+                background: linear-gradient(180deg, rgba(7, 142, 250, 0.12) 0%, rgba(8, 11, 18, 0) 100%);
+                border: 1px solid rgba(7, 142, 250, 0.15);
+            }
+            .tech-side .test-col-title {
+                background: linear-gradient(135deg, #078EFA, #AD89EB);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            .tech-side .t-card {
+                background: rgba(14, 117, 255, 0.05);
+                backdrop-filter: blur(20px);
+                -webkit-backdrop-filter: blur(20px);
+                /* Gradient Border Trick */
+                box-shadow: inset 0 0 0 1px rgba(11, 23, 41, 0.5);
+            }
+            .tech-side .t-card::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                border-radius: 20px;
+                padding: 1.5px;
+                background: linear-gradient(135deg, rgba(7, 142, 250, 0.5), rgba(142, 117, 255, 0.2), rgba(173, 137, 235, 0.5));
+                -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                -webkit-mask-composite: xor;
+                mask-composite: exclude;
+                pointer-events: none;
+            }
+            .tech-side .t-avatar {
+                background: linear-gradient(135deg, #078EFA, #8E75FF);
+                box-shadow: 0 4px 12px rgba(7, 142, 250, 0.3);
+            }
+            
+            /* Ambient glow for tech side */
+            .tech-glow {
+                position: absolute;
+                top: 20%; left: 10%;
+                width: 300px; height: 300px;
+                background: radial-gradient(circle, rgba(7, 142, 250, 0.15) 0%, transparent 70%);
+                filter: blur(60px);
+                pointer-events: none;
+            }
+
+            /* ── Historic Side (Tamil Varalaru) ── */
+            .hist-side {
+                background: linear-gradient(180deg, rgba(123, 17, 19, 0.15) 0%, rgba(8, 11, 18, 0) 100%);
+                border: 1px solid rgba(198, 166, 100, 0.15);
+            }
+            .hist-side .test-col-title {
+                background: linear-gradient(135deg, #C6A664, #FFC30B);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            .hist-side .t-card {
+                background: rgba(123, 17, 19, 0.15); /* Arakku tint */
+                border: 1px solid rgba(198, 166, 100, 0.2); /* Sand gold border */
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            }
+            .hist-side .t-card:hover {
+                border-color: rgba(198, 166, 100, 0.5);
+                box-shadow: 0 8px 30px rgba(226, 114, 91, 0.1); /* Terracotta shadow */
+            }
+            .hist-side .t-avatar {
+                background: linear-gradient(135deg, #E2725B, #7B1113); /* Terracotta to Arakku */
+                border: 2px solid #C6A664; /* Sand gold ring */
+            }
+            
+            /* Ambient glow for historic side */
+            .hist-glow {
+                position: absolute;
+                bottom: 20%; right: 10%;
+                width: 300px; height: 300px;
+                background: radial-gradient(circle, rgba(123, 17, 19, 0.15) 0%, transparent 70%);
+                filter: blur(60px);
+                pointer-events: none;
+            }
+            .hist-side .t-text {
+                color: rgba(255, 235, 205, 0.9); /* Slightly warm text */
+            }
+        </style>
+
+        <div class="tech-glow"></div>
+        <div class="hist-glow"></div>
+
+        <div class="testimonials-inner">
+            <div class="test-header">
+                <div class="test-eyebrow">
+                    <span class="test-eyebrow-line"></span>
+                    Community Feedback
+                    <span class="test-eyebrow-line"></span>
+                </div>
+                <h2 class="test-headline">What the Audience Says</h2>
+            </div>
+
+            <div class="test-grid">
+                
+                <!-- Tamil Technology Side -->
+                <div class="tech-side test-col">
+                    <div class="test-col-header">
+                        <img src="assets/logo-yt/TT.png" alt="Tamil Tech Logo" width="32" height="32" style="border-radius: 8px;">
+                        <h3 class="test-col-title">Tamil Technology / Workshop</h3>
+                    </div>
+                    <div class="test-marquee-wrap">
+                        <div class="test-marquee">
+                            <!-- SET A -->
+                            <div class="t-card">
+                                <div class="t-user"><div class="t-avatar">J</div><div><div class="t-name">@JothiLakshmi-t4j</div></div></div>
+                                <p class="t-text">Thank you so much😊😊 I now fully understand this concept</p>
+                            </div>
+                            <div class="t-card">
+                                <div class="t-user"><div class="t-avatar">K</div><div><div class="t-name">@killerkomali1959</div></div></div>
+                                <p class="t-text">masss broo nee simple explaination</p>
+                            </div>
+                            <div class="t-card">
+                                <div class="t-user"><div class="t-avatar">G</div><div><div class="t-name">@gmchitraalagar6256</div></div></div>
+                                <p class="t-text">Excellent explanation</p>
+                            </div>
+                            <div class="t-card">
+                                <div class="t-user"><div class="t-avatar">R</div><div><div class="t-name">@RamAn-x4b2v</div></div></div>
+                                <p class="t-text">Nallave purinchuthu</p>
+                            </div>
+                            <div class="t-card">
+                                <div class="t-user"><div class="t-avatar">M</div><div><div class="t-name">@MonikadeviM-bw2lr</div></div></div>
+                                <p class="t-text">Java setup bro Create more videos</p>
+                            </div>
+                            <div class="t-card">
+                                <div class="t-user"><div class="t-avatar">V</div><div><div class="t-name">@vinsent_7777</div></div></div>
+                                <p class="t-text">Bro explain the oops concepts and its keyword with springboot</p>
+                            </div>
+                            <div class="t-card">
+                                <div class="t-user"><div class="t-avatar">H</div><div><div class="t-name">Hari Doss</div><div class="t-rating">★★★★★</div></div></div>
+                                <p class="t-text">Tamil Tech Gemini API and python workshop</p>
+                            </div>
+                            
+                            <!-- SET B (Duplicate for seamless loop) -->
+                            <div class="t-card">
+                                <div class="t-user"><div class="t-avatar">J</div><div><div class="t-name">@JothiLakshmi-t4j</div></div></div>
+                                <p class="t-text">Thank you so much😊😊 I now fully understand this concept</p>
+                            </div>
+                            <div class="t-card">
+                                <div class="t-user"><div class="t-avatar">K</div><div><div class="t-name">@killerkomali1959</div></div></div>
+                                <p class="t-text">masss broo nee simple explaination</p>
+                            </div>
+                            <div class="t-card">
+                                <div class="t-user"><div class="t-avatar">G</div><div><div class="t-name">@gmchitraalagar6256</div></div></div>
+                                <p class="t-text">Excellent explanation</p>
+                            </div>
+                            <div class="t-card">
+                                <div class="t-user"><div class="t-avatar">R</div><div><div class="t-name">@RamAn-x4b2v</div></div></div>
+                                <p class="t-text">Nallave purinchuthu</p>
+                            </div>
+                            <div class="t-card">
+                                <div class="t-user"><div class="t-avatar">M</div><div><div class="t-name">@MonikadeviM-bw2lr</div></div></div>
+                                <p class="t-text">Java setup bro Create more videos</p>
+                            </div>
+                            <div class="t-card">
+                                <div class="t-user"><div class="t-avatar">V</div><div><div class="t-name">@vinsent_7777</div></div></div>
+                                <p class="t-text">Bro explain the oops concepts and its keyword with springboot</p>
+                            </div>
+                            <div class="t-card">
+                                <div class="t-user"><div class="t-avatar">H</div><div><div class="t-name">Hari Doss</div><div class="t-rating">★★★★★</div></div></div>
+                                <p class="t-text">Tamil Tech Gemini API and python workshop</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tamil Varalaru Side -->
+                <div class="hist-side test-col">
+                    <div class="test-col-header">
+                        <img src="assets/logo-yt/TV.png" alt="Tamil Varalaru Logo" width="32" height="32" style="border-radius: 8px;">
+                        <h3 class="test-col-title">Tamil Varalaru</h3>
+                    </div>
+                    <div class="test-marquee-wrap">
+                        <div class="test-marquee reverse">
+                            <!-- SET A -->
+                            <div class="t-card">
+                                <div class="t-user"><div class="t-avatar">A</div><div><div class="t-name">@anitha-b9w6d</div></div></div>
+                                <p class="t-text">Very exciting to see our Raja Raja cholan's original face. Super 🎉🎉🎉. I think no need for the subtitle. It is a hindrance to see the full view.</p>
+                            </div>
+                            <div class="t-card">
+                                <div class="t-user"><div class="t-avatar">P</div><div><div class="t-name">@priyac-ih4vo</div></div></div>
+                                <p class="t-text">Litterly goosebumbs..Spr bro..location pls</p>
+                            </div>
+                            <div class="t-card">
+                                <div class="t-user"><div class="t-avatar">G</div><div><div class="t-name">@GowriSankar-x7b</div></div></div>
+                                <p class="t-text">Super</p>
+                            </div>
+                            <div class="t-card">
+                                <div class="t-user"><div class="t-avatar">K</div><div><div class="t-name">@krishnaks3126</div></div></div>
+                                <p class="t-text">வாழ்க உங்களின் முயற்சி வாழ்த்துக்கள் இன்னும் இது போன்ற பல கோயில்கள் உள்ளன ❤❤❤</p>
+                            </div>
+                            <div class="t-card">
+                                <div class="t-user"><div class="t-avatar">T</div><div><div class="t-name">@titustamilmohan1673</div></div></div>
+                                <p class="t-text">Amazing 😊</p>
+                            </div>
+                            
+                            <!-- SET B (Duplicate for seamless loop) -->
+                            <div class="t-card">
+                                <div class="t-user"><div class="t-avatar">A</div><div><div class="t-name">@anitha-b9w6d</div></div></div>
+                                <p class="t-text">Very exciting to see our Raja Raja cholan's original face. Super 🎉🎉🎉. I think no need for the subtitle. It is a hindrance to see the full view.</p>
+                            </div>
+                            <div class="t-card">
+                                <div class="t-user"><div class="t-avatar">P</div><div><div class="t-name">@priyac-ih4vo</div></div></div>
+                                <p class="t-text">Litterly goosebumbs..Spr bro..location pls</p>
+                            </div>
+                            <div class="t-card">
+                                <div class="t-user"><div class="t-avatar">G</div><div><div class="t-name">@GowriSankar-x7b</div></div></div>
+                                <p class="t-text">Super</p>
+                            </div>
+                            <div class="t-card">
+                                <div class="t-user"><div class="t-avatar">K</div><div><div class="t-name">@krishnaks3126</div></div></div>
+                                <p class="t-text">வாழ்க உங்களின் முயற்சி வாழ்த்துக்கள் இன்னும் இது போன்ற பல கோயில்கள் உள்ளன ❤❤❤</p>
+                            </div>
+                            <div class="t-card">
+                                <div class="t-user"><div class="t-avatar">T</div><div><div class="t-name">@titustamilmohan1673</div></div></div>
+                                <p class="t-text">Amazing 😊</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         CONTACT SECTION
+    ══════════════════════════════════ -->
+    <section id="contact" style="padding: 100px max(24px, 6vw); background: #ffffff; position: relative; z-index: 1;">
+        <div style="max-width: 1000px; margin: 0 auto; text-align: center;">
+            <div style="margin-bottom: 64px;">
+                <h2 style="font-size: clamp(2.5rem, 4vw, 3.5rem); font-weight: 800; color: #111; margin-bottom: 16px; letter-spacing: -0.02em;">
+                    Let's <span style="background: linear-gradient(135deg, #078EFA, #AD89EB); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Connect</span>
+                </h2>
+                <p style="color: #555; font-size: 1.1rem; max-width: 600px; margin: 0 auto;">
+                    Open for opportunities, collaborations, and discussions on tech and history.
+                </p>
+            </div>
+
+            <style>
+                .social-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                    gap: 24px;
+                }
+                .social-card {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 40px 24px;
+                    background: #f8fafc;
+                    border: 1px solid rgba(0,0,0,0.05);
+                    border-radius: 24px;
+                    text-decoration: none;
+                    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, border-color 0.4s ease;
+                }
+                .social-card:hover {
+                    transform: translateY(-8px);
+                    background: #fff;
+                    box-shadow: 0 24px 48px rgba(7, 142, 250, 0.1);
+                    border-color: rgba(7, 142, 250, 0.3);
+                }
+                .social-icon {
+                    width: 48px; height: 48px;
+                    margin-bottom: 20px;
+                    fill: #111;
+                    transition: fill 0.4s ease, transform 0.4s ease;
+                }
+                .social-card:hover .social-icon {
+                    fill: #078EFA;
+                    transform: scale(1.1);
+                }
+                .social-name {
+                    font-size: 18px; font-weight: 700; color: #111; margin-bottom: 8px;
+                }
+                .social-handle {
+                    font-size: 14px; font-weight: 500; color: #64748b;
+                }
+            </style>
+
+            <div class="social-grid">
+                <a href="https://www.linkedin.com/in/krishanth-g" target="_blank" class="social-card">
+                    <svg class="social-icon" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    <div class="social-name">LinkedIn</div>
+                    <div class="social-handle">@krishanth-g</div>
+                </a>
+                <a href="https://github.com/krishanthg" target="_blank" class="social-card">
+                    <svg class="social-icon" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    <div class="social-name">GitHub</div>
+                    <div class="social-handle">@krishanthg</div>
+                </a>
+                <a href="https://www.youtube.com/@TamilTechnology-youtube" target="_blank" class="social-card">
+                    <svg class="social-icon" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55a3.016 3.016 0 0 0-2.122 2.136C0 8.07 0 12 0 12s0 3.93.501 5.814a3.016 3.016 0 0 0 2.122 2.136c1.872.55 9.377.55 9.377.55s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    <div class="social-name">Tamil Technology</div>
+                    <div class="social-handle">YouTube Channel</div>
+                </a>
+                <a href="https://www.youtube.com/@TamilVaralaru-tt" target="_blank" class="social-card">
+                    <svg class="social-icon" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.377.55a3.016 3.016 0 0 0-2.122 2.136C0 8.07 0 12 0 12s0 3.93.501 5.814a3.016 3.016 0 0 0 2.122 2.136c1.872.55 9.377.55 9.377.55s7.505 0 9.377-.55a3.016 3.016 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    <div class="social-name">Tamil Varalaru</div>
+                    <div class="social-handle">YouTube Channel</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+         FOOTER SECTION
+    ══════════════════════════════════ -->
+    <footer style="background: #040609; padding: 80px max(24px, 6vw) 40px; color: rgba(255,255,255,0.7); font-family: 'Inter', sans-serif; position: relative; z-index: 1;">
+        <div style="max-width: 1240px; margin: 0 auto; display: flex; flex-direction: column; gap: 64px;">
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 48px;">
+                <div style="flex: 1; min-width: 300px;">
+                    <h3 style="font-size: 24px; font-weight: 800; color: #fff; margin-bottom: 16px; letter-spacing: -0.02em;">Krishanth <span style="color: #078EFA;">G</span></h3>
+                    <p style="font-size: 15px; line-height: 1.6; max-width: 400px;">
+                        Full-Stack AI Developer & Software Engineer bridging the gap between cutting-edge technology and cultural heritage.
+                    </p>
+                </div>
+                
+                <div style="display: flex; gap: 64px; flex-wrap: wrap;">
+                    <div>
+                        <h4 style="color: #fff; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 20px;">Navigation</h4>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 15px;">
+                            <li><a href="#about" style="color: inherit; text-decoration: none; transition: color 0.3s;">About</a></li>
+                            <li><a href="#projects" style="color: inherit; text-decoration: none; transition: color 0.3s;">Projects</a></li>
+                            <li><a href="#experience" style="color: inherit; text-decoration: none; transition: color 0.3s;">Experience</a></li>
+                            <li><a href="#contact" style="color: inherit; text-decoration: none; transition: color 0.3s;">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 style="color: #fff; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 20px;">Connect</h4>
+                        <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 15px;">
+                            <li><a href="https://www.linkedin.com/in/krishanth-g" target="_blank" style="color: inherit; text-decoration: none; transition: color 0.3s;">LinkedIn</a></li>
+                            <li><a href="https://github.com/krishanthg" target="_blank" style="color: inherit; text-decoration: none; transition: color 0.3s;">GitHub</a></li>
+                            <li><a href="https://www.youtube.com/@TamilTechnology-youtube" target="_blank" style="color: inherit; text-decoration: none; transition: color 0.3s;">Tamil Technology</a></li>
+                            <li><a href="https://www.youtube.com/@TamilVaralaru-tt" target="_blank" style="color: inherit; text-decoration: none; transition: color 0.3s;">Tamil Varalaru</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 32px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px; font-size: 14px;">
+                <p>&copy; 2026 Krishanth G. All rights reserved.</p>
+                <p>Designed & Engineered with passion.</p>
+            </div>
+        </div>
+        <style>
+            footer a:hover { color: #078EFA !important; }
+        </style>
+    </footer>
+
+    <style>
+        /* ─── Hardware-Accelerated Native Custom Cursor ─── */
+        body, html, * {
+            cursor: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.5 4.5L25.5 13.5L16.5 16L12.5 26.5L7.5 4.5Z' fill='black' stroke='white' stroke-width='2.5' stroke-linejoin='round'/%3E%3C/svg%3E") 7 4, auto !important;
+        }
+        
+        /* Interactive Hover State (Turns Blue) */
+        a, button, .event-card, .proj-card, .exp-card, input, select, textarea, [role="button"] {
+            cursor: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.5 4.5L25.5 13.5L16.5 16L12.5 26.5L7.5 4.5Z' fill='%23078EFA' stroke='white' stroke-width='2.5' stroke-linejoin='round'/%3E%3C/svg%3E") 7 4, pointer !important;
+        }
+
+        /* ─── Premium Cinematic Touches ─── */
+        #premium-preloader {
+            position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+            background: #040609; z-index: 10000;
+            display: flex; justify-content: center; align-items: center;
+            transition: transform 1.2s cubic-bezier(0.77, 0, 0.175, 1);
+        }
+        #premium-preloader.loaded {
+            transform: translateY(-100%);
+        }
+        .preloader-text {
+            color: #fff; font-size: 14px; letter-spacing: 6px; font-weight: 700;
+            animation: pulse 1.5s infinite alternate;
+        }
+        .film-grain {
+            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+            pointer-events: none; z-index: 9999; opacity: 0.05;
+            background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+    </style>
+
+    <!-- GSAP for smooth animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        /* ─── Nav scroll shrink ─── */
+        const nav = document.getElementById('apple-nav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 10);
+        }, { passive: true });
+
+        /* ─── Active link tracking ─── */
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-links a');
+        const io = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting)
+                    navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id));
+            });
+        }, { rootMargin: '-40% 0px -55% 0px' });
+        sections.forEach(s => io.observe(s));
+
+        /* ─── Mobile hamburger ─── */
+        const hamburger = document.getElementById('nav-hamburger');
+        const mobileMenu = document.getElementById('nav-mobile-menu');
+        hamburger.addEventListener('click', () => {
+            const open = hamburger.classList.toggle('open');
+            mobileMenu.classList.toggle('open', open);
+            hamburger.setAttribute('aria-expanded', open);
+        });
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('open');
+                mobileMenu.classList.remove('open');
+                hamburger.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        /* ─── Global Scroll-Reveal Animations (GSAP) ─── */
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Hero Entrance Animation
+        gsap.from(".hero-left > *", {
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            stagger: 0.15,
+            ease: "power3.out",
+            delay: 0.2
+        });
+        gsap.from(".hero-image-wrap", {
+            scale: 0.9,
+            opacity: 0,
+            duration: 1.2,
+            ease: "power3.out",
+            delay: 0.5
+        });
+
+        // Universal Fade Slide Up for Sections
+        const fadeUpSections = gsap.utils.toArray('.about-title, .about-bio, .section-eyebrow, h2');
+        fadeUpSections.forEach(el => {
+            gsap.from(el, {
+                scrollTrigger: {
+                    trigger: el,
+                    start: "top 85%",
+                    toggleActions: "play none none none"
+                },
+                y: 40,
+                opacity: 0,
+                duration: 0.8,
+                ease: "power3.out"
+            });
+        });
+
+        // Staggered Cards (Projects, Experience, Education, Social)
+        const staggerContainers = ['.about-stats-row', '.about-skills-grid', '.about-cta-row', '.proj-grid', '.exp-timeline', '.edu-grid', '.social-grid', '.about-edu-cards'];
+        staggerContainers.forEach(selector => {
+            const container = document.querySelector(selector);
+            if (container) {
+                const children = container.children;
+                if (children.length > 0) {
+                    gsap.from(children, {
+                        scrollTrigger: {
+                            trigger: container,
+                            start: "top 85%",
+                            toggleActions: "play none none none"
+                        },
+                        y: 50,
+                        opacity: 0,
+                        duration: 0.8,
+                        stagger: 0.15,
+                        ease: "back.out(1.2)"
+                    });
+                }
+            }
+        });
+
+        // Premium Preloader Removal
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('premium-preloader').classList.add('loaded');
+            }, 800); // 800ms minimum display for premium feel
+        });
+
+        // Magnetic Hover Effect for Buttons and Logos
+        const magneticEls = document.querySelectorAll('.nav-btn-ghost, .nav-btn-primary, .nav-logo-mark, .hero-btn, .social-icon');
+        magneticEls.forEach((el) => {
+            el.addEventListener('mousemove', (e) => {
+                const rect = el.getBoundingClientRect();
+                const x = (e.clientX - rect.left - rect.width / 2) * 0.35;
+                const y = (e.clientY - rect.top - rect.height / 2) * 0.35;
+                gsap.to(el, { x: x, y: y, duration: 0.4, ease: "power2.out" });
+            });
+            el.addEventListener('mouseleave', () => {
+                gsap.to(el, { x: 0, y: 0, duration: 0.7, ease: "elastic.out(1, 0.3)" });
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <!--
+      Social Media Meta Tags
+    -->
+    <meta property="og:title" content="Code In Place" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://codeinplace.stanford.edu/" />
+    <meta property="og:site_name" content="Code in Place" />
+    <meta property="og:locale" content="en_US" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://codeinplace.stanford.edu//",
+        "name": "Code In Place",
+        "inLanguage": [
+          "en-US",
+          "en-GB",
+          "en-CA",
+          "en-AU",
+          "en-NZ",
+          "en-IE",
+          "en-ZA",
+          "en-IN",
+          "en-SG",
+          "en-MY",
+          "en-PH",
+          "en-HK",
+          "en-PK",
+          "en-NG",
+          "en-KE",
+          "en-GH",
+          "en-TZ",
+          "en-ZW",
+          "en-UG",
+          "en-ZM",
+          "en-BD",
+          "en-LK",
+          "en-JM"
+        ]
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.29.3/full/pyodide.js"></script>
+
+    <meta
+      name="description"
+      content="A free, human-centered, intro-to-coding course from Stanford University"
+    />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <title>Code in Place</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.4.5/themes/satellite-min.css"
+      integrity="sha256-TehzF/2QvNKhGQrrNpoOb2Ck4iGZ1J/DI4pkd2oUsBc="
+      crossorigin="anonymous"
+    />
+    <!-- <script src="http://localhost:8097"></script> -->
+    <!-- Allow Access-Control-Allow-Origin: *-->
+    <!-- Preestablish a connection to Fonts CDNs -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.cdnfonts.com" />
+    <script type="module" crossorigin src="/assets/index-DAtbNTUs.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vendor-react-CCh0ngPv.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-firebase-gRtWFV3N.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-monaco-D-163Ytf.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-antd-BzMy0QqC.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-tiptap-ojXPvzGc.js">
+    <link rel="stylesheet" crossorigin href="/assets/vendor-monaco-Ck3IbhyB.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-qs5czcnE.css">
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
