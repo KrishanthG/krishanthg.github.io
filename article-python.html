@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python: King of Modern Programming | Krishanth G Research</title>
+    
+    <meta name="description" content="Research paper by Krishanth G on why Python is the King of modern programming.">
+    <meta name="theme-color" content="#040609">
+    <link rel="icon" type="image/png" href="assets/About%20Me/me.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;0,700;1,400&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Google Analytics (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --bg-color: #040609;
+            --text-main: rgba(255, 255, 255, 0.85);
+            --text-muted: rgba(255, 255, 255, 0.5);
+            --accent: #3592FF;
+        }
+
+        body {
+            background: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Inter', -apple-system, sans-serif;
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        /* Native Custom Cursor */
+        body, html, * {
+            cursor: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.5 4.5L25.5 13.5L16.5 16L12.5 26.5L7.5 4.5Z' fill='black' stroke='white' stroke-width='2.5' stroke-linejoin='round'/%3E%3C/svg%3E") 7 4, auto !important;
+        }
+        a, button {
+            cursor: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.5 4.5L25.5 13.5L16.5 16L12.5 26.5L7.5 4.5Z' fill='%23078EFA' stroke='white' stroke-width='2.5' stroke-linejoin='round'/%3E%3C/svg%3E") 7 4, pointer !important;
+        }
+
+        .film-grain {
+            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+            pointer-events: none; z-index: 9999; opacity: 0.05;
+            background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+
+        /* Nav */
+        .apple-nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 9999;
+            height: 52px; display: flex; align-items: center; justify-content: space-between;
+            padding: 0 24px;
+            background: rgba(10, 15, 25, 0.7); backdrop-filter: blur(24px);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            transition: all .35s ease;
+        }
+        .apple-nav.scrolled {
+            height: 44px; background: rgba(5, 8, 15, 0.9);
+            box-shadow: 0 1px 24px rgba(53,146,255,.05);
+        }
+        .nav-logo { display:flex; align-items:center; gap:10px; text-decoration:none; }
+        .nav-logo-mark {
+            width:30px; height:30px; border-radius:8px;
+            background: linear-gradient(135deg,#5aaaff 0%,#3592FF 100%);
+            display:flex; align-items:center; justify-content:center;
+            font-size:11px; font-weight:700; color:#fff;
+        }
+        .nav-logo-text { font-size:15px; font-weight:600; color:#fff; }
+        .nav-btn-ghost { color:#fff; text-decoration:none; font-size:12px; font-weight:500; opacity: 0.8; transition: opacity 0.3s; }
+        .nav-btn-ghost:hover { opacity: 1; }
+
+        /* Article Layout */
+        article {
+            max-width: 720px; margin: 0 auto;
+            padding: 140px 24px 80px;
+        }
+
+        .article-meta {
+            font-size: 13px; color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;
+            margin-bottom: 16px; display: block;
+        }
+        .article-meta span { color: var(--text-muted); font-weight: 400; margin-left: 12px; }
+
+        h1 {
+            font-size: clamp(32px, 5vw, 48px); font-weight: 800; line-height: 1.2;
+            letter-spacing: -0.02em; margin-bottom: 32px; color: #fff;
+        }
+
+        .author-box {
+            display: flex; align-items: center; gap: 16px;
+            padding-bottom: 32px; margin-bottom: 40px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .author-box img { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; }
+        .author-info strong { display: block; color: #fff; font-size: 15px; }
+        .author-info span { color: var(--text-muted); font-size: 13px; }
+
+        h2 { font-size: 24px; color: #fff; margin: 48px 0 24px; font-weight: 700; }
+        p { margin-bottom: 24px; font-size: 17px; }
+        
+        ul, ol { margin-bottom: 24px; padding-left: 24px; }
+        li { margin-bottom: 10px; font-size: 17px; }
+
+        a.text-link { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.3s; }
+        a.text-link:hover { border-color: var(--accent); }
+
+        pre {
+            background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px; padding: 20px; overflow-x: auto;
+            margin: 32px 0;
+        }
+        code {
+            font-family: 'Fira Code', monospace; font-size: 14px; color: #e2e8f0;
+        }
+        p code {
+            background: rgba(255,255,255,0.05); padding: 2px 6px; border-radius: 4px; font-size: 14px;
+        }
+        
+        blockquote {
+            border-left: 4px solid var(--accent);
+            padding-left: 20px; margin: 32px 0;
+            font-style: italic; color: rgba(255,255,255,0.7);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="film-grain"></div>
+
+    <header>
+        <nav class="apple-nav" id="apple-nav">
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-mark">GK</div>
+                <span class="nav-logo-text">Krishanth</span>
+            </a>
+            <div class="nav-actions">
+                <a href="research.html" class="nav-btn-ghost">← Back to Research</a>
+            </div>
+        </nav>
+    </header>
+
+    <article>
+        <span class="article-meta">Software Engineering <span>March 2024</span></span>
+        
+        <h1>Python: The King of Modern Programming</h1>
+        
+        <div class="author-box">
+            <img src="assets/About Me/me.png" alt="Krishanth G">
+            <div class="author-info">
+                <strong>Krishanth G</strong>
+                <span>AI & Software Engineer | Python & Full-Stack Developer</span>
+            </div>
+        </div>
+
+        <p>Are you fascinated by hearing the word Python? No! Not the snake. The Programming Language! From students to working professionals, everyone is curious about learning Python because the value of Python programmers is skyrocketing.</p>
+        
+        <p>Have you ever thought about why Python is so much more popular than other languages? Come on, let's reveal the secret answer behind this question.</p>
+
+        <h2>Easy to Learn and Use</h2>
+        <p>The main feature of Python is that it is incredibly user and beginner-friendly. If you want to start your journey into the world of programming, I highly recommend Python. It is very easy and doesn't have the complex syntax typical of other programming languages.</p>
+        
+        <p>It is a high-level programming language. Therefore, its syntax is very simple, and anyone can learn it easily. Compared to other languages, Python relies heavily on spaces (indentation). If you try to run a program without proper indentation, it throws an <code>IndentationError</code>.</p>
+        
+        <p>What I am trying to say is that Python doesn't rely on curly brackets <code>{}</code> to define blocks of code. You can create a function without flower brackets. Instead, you use clean, readable indentation.</p>
+
+        <h2>Multitasking Capabilities</h2>
+        <p>This is very important. This language can be used for a massive variety of purposes, including:</p>
+        <ul>
+            <li>Data Science and Analytics</li>
+            <li>Software Development</li>
+            <li>Web Development</li>
+            <li>Automation</li>
+            <li>IOT (Internet of Things)</li>
+            <li>Game Development</li>
+        </ul>
+
+        <h2>Open Source Software</h2>
+        <p>Python is entirely Open Source. You just go to the Python website, download it, install it, and use it. It is free and open for everyone.</p>
+        
+        <p>Its simple installation process is incredibly useful for developers, acting as a massive time-saver. Collaboration is the fastest way to grow, and Python is rapidly developing with the help of a global network of open-source contributors.</p>
+
+        <h2>Community Support</h2>
+        <p>When a language is rapidly growing, there will inevitably be a vast number of developers actually using it. Python has an enormous community that offers robust support for solving errors and bugs. The Python community is known for being particularly helpful, offering tutorials, extensive documentation, and solutions on platforms like Stack Overflow, GitHub, and Python’s own forums.</p>
+
+        <h2>Cross-Platform Support</h2>
+        <p>It is extremely easy for developers to use Python on any platform, such as:</p>
+        <ul>
+            <li>Windows</li>
+            <li>Mac</li>
+            <li>Linux</li>
+        </ul>
+        <p>Developers from various platforms can write code and collaborate seamlessly using file-sharing platforms like GitHub.</p>
+
+        <h2>Compatibility with Other Languages</h2>
+        <p>Python is also highly compatible with other languages like C and C++. This allows developers to write performance-critical components in lower-level languages and then integrate them directly with Python.</p>
+        
+        <p>This makes Python a hybrid language that offers the best of both worlds: extreme execution speed where necessary, and elegant simplicity where possible.</p>
+
+        <h2>Conclusion</h2>
+        <p>Python's combination of simplicity, power, and versatility has made it an essential tool for developers. Today, Python is more than just a programming language—it’s a part of developers' lives and forms an emotional connection for many in the coding community. From its ease of learning to its multitasking abilities, open-source nature, and strong community support, Python truly reigns as the:</p>
+
+        <blockquote>
+            "King of Modern Programming"
+        </blockquote>
+
+    </article>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script>
+        // Nav Shrink
+        window.addEventListener('scroll', () => {
+            document.getElementById('apple-nav').classList.toggle('scrolled', window.scrollY > 10);
+        }, { passive: true });
+
+        // Entrance Animation
+        gsap.from("article > *", { y: 20, opacity: 0, duration: 0.8, stagger: 0.1, ease: "power2.out" });
+    </script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Future of AI in Education | Krishanth G Research</title>
+    
+    <meta name="description" content="Research paper by Krishanth G on The Future of AI in Education: Personalized Learning for All.">
+    <meta name="theme-color" content="#040609">
+    <link rel="icon" type="image/png" href="assets/About%20Me/me.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;0,700;1,400&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Google Analytics (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --bg-color: #040609;
+            --text-main: rgba(255, 255, 255, 0.85);
+            --text-muted: rgba(255, 255, 255, 0.5);
+            --accent: #3592FF;
+        }
+
+        body {
+            background: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Inter', -apple-system, sans-serif;
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        /* Native Custom Cursor */
+        body, html, * {
+            cursor: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.5 4.5L25.5 13.5L16.5 16L12.5 26.5L7.5 4.5Z' fill='black' stroke='white' stroke-width='2.5' stroke-linejoin='round'/%3E%3C/svg%3E") 7 4, auto !important;
+        }
+        a, button {
+            cursor: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.5 4.5L25.5 13.5L16.5 16L12.5 26.5L7.5 4.5Z' fill='%23078EFA' stroke='white' stroke-width='2.5' stroke-linejoin='round'/%3E%3C/svg%3E") 7 4, pointer !important;
+        }
+
+        .film-grain {
+            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+            pointer-events: none; z-index: 9999; opacity: 0.05;
+            background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+
+        /* Nav */
+        .apple-nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 9999;
+            height: 52px; display: flex; align-items: center; justify-content: space-between;
+            padding: 0 24px;
+            background: rgba(10, 15, 25, 0.7); backdrop-filter: blur(24px);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            transition: all .35s ease;
+        }
+        .apple-nav.scrolled {
+            height: 44px; background: rgba(5, 8, 15, 0.9);
+            box-shadow: 0 1px 24px rgba(53,146,255,.05);
+        }
+        .nav-logo { display:flex; align-items:center; gap:10px; text-decoration:none; }
+        .nav-logo-mark {
+            width:30px; height:30px; border-radius:8px;
+            background: linear-gradient(135deg,#5aaaff 0%,#3592FF 100%);
+            display:flex; align-items:center; justify-content:center;
+            font-size:11px; font-weight:700; color:#fff;
+        }
+        .nav-logo-text { font-size:15px; font-weight:600; color:#fff; }
+        .nav-btn-ghost { color:#fff; text-decoration:none; font-size:12px; font-weight:500; opacity: 0.8; transition: opacity 0.3s; }
+        .nav-btn-ghost:hover { opacity: 1; }
+
+        /* Article Layout */
+        article {
+            max-width: 720px; margin: 0 auto;
+            padding: 140px 24px 80px;
+        }
+
+        .article-meta {
+            font-size: 13px; color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;
+            margin-bottom: 16px; display: block;
+        }
+        .article-meta span { color: var(--text-muted); font-weight: 400; margin-left: 12px; }
+
+        h1 {
+            font-size: clamp(32px, 5vw, 48px); font-weight: 800; line-height: 1.2;
+            letter-spacing: -0.02em; margin-bottom: 32px; color: #fff;
+        }
+
+        .author-box {
+            display: flex; align-items: center; gap: 16px;
+            padding-bottom: 32px; margin-bottom: 40px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .author-box img { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; }
+        .author-info strong { display: block; color: #fff; font-size: 15px; }
+        .author-info span { color: var(--text-muted); font-size: 13px; }
+
+        h2 { font-size: 24px; color: #fff; margin: 48px 0 24px; font-weight: 700; }
+        p { margin-bottom: 24px; font-size: 17px; }
+        
+        ul, ol { margin-bottom: 24px; padding-left: 24px; }
+        li { margin-bottom: 10px; font-size: 17px; }
+
+        a.text-link { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.3s; }
+        a.text-link:hover { border-color: var(--accent); }
+
+        pre {
+            background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px; padding: 20px; overflow-x: auto;
+            margin: 32px 0;
+        }
+        code {
+            font-family: 'Fira Code', monospace; font-size: 14px; color: #e2e8f0;
+        }
+        p code {
+            background: rgba(255,255,255,0.05); padding: 2px 6px; border-radius: 4px; font-size: 14px;
+        }
+        
+        blockquote {
+            border-left: 4px solid var(--accent);
+            padding-left: 20px; margin: 32px 0;
+            font-style: italic; color: rgba(255,255,255,0.7);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="film-grain"></div>
+
+    <header>
+        <nav class="apple-nav" id="apple-nav">
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-mark">GK</div>
+                <span class="nav-logo-text">Krishanth</span>
+            </a>
+            <div class="nav-actions">
+                <a href="research.html" class="nav-btn-ghost">← Back to Research</a>
+            </div>
+        </nav>
+    </header>
+
+    <article>
+        <span class="article-meta">Artificial Intelligence <span>October 14, 2024</span></span>
+        
+        <h1>The Future of AI in Education: Personalized Learning for All</h1>
+        
+        <div class="author-box">
+            <img src="assets/About Me/me.png" alt="Krishanth G">
+            <div class="author-info">
+                <strong>Krishanth G</strong>
+                <span>AI & Software Engineer | Python & Full-Stack Developer</span>
+            </div>
+        </div>
+
+        <p>Nowadays AI (Artificial Intelligence) is the trending topic. Let's see how people are increasingly curious about learning AI these days.</p>
+        
+        <h2>Google Trends</h2>
+        <p>Google Trends shows a massive spike in searches for the topic "Artificial Intelligence" from the year 2023 to 2024. People across all demographics are actively researching its potential.</p>
+
+        <h2>AI For Education</h2>
+        <p>AI can teach anything at any time. You can ask AI to explain any topic you want to learn. If you have any doubts, you can ask questions related to the topic, making it highly useful for students to gain clarity. It can also be used for revision and knowledge checking by attending AI-generated quizzes.</p>
+        
+        <p>How to do all these things? Just find an AI model that suits you. Some of the top AI models include:</p>
+        <ul>
+            <li>ChatGPT</li>
+            <li>Gemini AI</li>
+            <li>Meta AI</li>
+        </ul>
+
+        <h2>How to use AI Effectively?</h2>
+        <p>It is a big question: What is the next step to unlocking the power of AI? The answer is a technique called <strong>Prompt Engineering</strong>. It is an essential skill for all AI users.</p>
+        
+        <p>Let's look at a simple example to illustrate the power of Prompt Engineering:</p>
+        <ul>
+            <li><strong>Example 1:</strong> When you ask your friend "give me a pen", your friend gives you a pen. You return the pen.</li>
+            <li><strong>Example 2:</strong> When you ask your friend "Please, give me a pen", your friend gives you a pen, and you return it with a "Thanks". You can see the difference in communication quality between Example 1 and 2.</li>
+        </ul>
+
+        <p>Simply put, Prompt Engineering is a method of communication that helps you talk to AI more effectively. When you ask a physics doubt to a Physics Professor versus a student, you notice a massive difference in the quality of the answer. The professor's answer is much more understandable. Similarly, you can assign a "role" to the AI (e.g., "Act as a Physics Professor") when you talk about a specific topic to get expert-level responses.</p>
+
+        <p>Additionally, modern AI models allow you to upload PDFs, images, and other files. While not strictly necessary, providing this context helps generate much more efficient and accurate results. This feature is widely available in models like ChatGPT.</p>
+
+        <blockquote>
+            "The Art of Prompting is the future of AI—not only in the field of Education but across all industries."
+        </blockquote>
+
+        <h2>Keep Updated: The Era of AI Begins</h2>
+        <p>After learning these techniques, it is critical to stay aware of the latest AI news and updates. We are currently in a period of rapid AI development. For context, ChatGPT 3.5 launched on November 30, 2022. GPT-4 launched on March 14, 2023, and now newer versions like GPT-4o are being actively deployed.</p>
+
+        <h2>Tips For Using AI</h2>
+        <ul>
+            <li>Use kind, clear words for better results.</li>
+            <li>Give a specific role to the AI model before asking your question.</li>
+            <li>Attach context files to your prompt if necessary.</li>
+            <li>Stay updated on the latest model capabilities.</li>
+        </ul>
+
+    </article>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script>
+        // Nav Shrink
+        window.addEventListener('scroll', () => {
+            document.getElementById('apple-nav').classList.toggle('scrolled', window.scrollY > 10);
+        }, { passive: true });
+
+        // Entrance Animation
+        gsap.from("article > *", { y: 20, opacity: 0, duration: 0.8, stagger: 0.1, ease: "power2.out" });
+    </script>
+</body>
+</html>

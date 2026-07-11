@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Gaming Addiction & Responsibility | Krishanth G Research</title>
+    
+    <meta name="description" content="Research paper by Krishanth G on Why Students are Attracted Towards Online Gaming, Addiction, and Responsible Gaming.">
+    <meta name="theme-color" content="#040609">
+    <link rel="icon" type="image/png" href="assets/About%20Me/me.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;0,700;1,400&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Google Analytics (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --bg-color: #040609;
+            --text-main: rgba(255, 255, 255, 0.85);
+            --text-muted: rgba(255, 255, 255, 0.5);
+            --accent: #3592FF;
+        }
+
+        body {
+            background: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Inter', -apple-system, sans-serif;
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        /* Native Custom Cursor */
+        body, html, * {
+            cursor: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.5 4.5L25.5 13.5L16.5 16L12.5 26.5L7.5 4.5Z' fill='black' stroke='white' stroke-width='2.5' stroke-linejoin='round'/%3E%3C/svg%3E") 7 4, auto !important;
+        }
+        a, button {
+            cursor: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.5 4.5L25.5 13.5L16.5 16L12.5 26.5L7.5 4.5Z' fill='%23078EFA' stroke='white' stroke-width='2.5' stroke-linejoin='round'/%3E%3C/svg%3E") 7 4, pointer !important;
+        }
+
+        .film-grain {
+            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+            pointer-events: none; z-index: 9999; opacity: 0.05;
+            background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+
+        /* Nav */
+        .apple-nav {
+            position: fixed; top: 0; left: 0; right: 0; z-index: 9999;
+            height: 52px; display: flex; align-items: center; justify-content: space-between;
+            padding: 0 24px;
+            background: rgba(10, 15, 25, 0.7); backdrop-filter: blur(24px);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            transition: all .35s ease;
+        }
+        .apple-nav.scrolled {
+            height: 44px; background: rgba(5, 8, 15, 0.9);
+            box-shadow: 0 1px 24px rgba(53,146,255,.05);
+        }
+        .nav-logo { display:flex; align-items:center; gap:10px; text-decoration:none; }
+        .nav-logo-mark {
+            width:30px; height:30px; border-radius:8px;
+            background: linear-gradient(135deg,#5aaaff 0%,#3592FF 100%);
+            display:flex; align-items:center; justify-content:center;
+            font-size:11px; font-weight:700; color:#fff;
+        }
+        .nav-logo-text { font-size:15px; font-weight:600; color:#fff; }
+        .nav-btn-ghost { color:#fff; text-decoration:none; font-size:12px; font-weight:500; opacity: 0.8; transition: opacity 0.3s; }
+        .nav-btn-ghost:hover { opacity: 1; }
+
+        /* Article Layout */
+        article {
+            max-width: 720px; margin: 0 auto;
+            padding: 140px 24px 80px;
+        }
+
+        .article-meta {
+            font-size: 13px; color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;
+            margin-bottom: 16px; display: block;
+        }
+        .article-meta span { color: var(--text-muted); font-weight: 400; margin-left: 12px; }
+
+        h1 {
+            font-size: clamp(28px, 5vw, 42px); font-weight: 800; line-height: 1.2;
+            letter-spacing: -0.02em; margin-bottom: 32px; color: #fff;
+        }
+
+        .author-box {
+            display: flex; align-items: center; gap: 16px;
+            padding-bottom: 32px; margin-bottom: 40px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .author-box img { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; }
+        .author-info strong { display: block; color: #fff; font-size: 15px; }
+        .author-info span { color: var(--text-muted); font-size: 13px; }
+
+        h2 { font-size: 24px; color: #fff; margin: 48px 0 24px; font-weight: 700; }
+        p { margin-bottom: 24px; font-size: 17px; }
+        
+        ul, ol { margin-bottom: 24px; padding-left: 24px; }
+        li { margin-bottom: 10px; font-size: 17px; }
+
+        a.text-link { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.3s; }
+        a.text-link:hover { border-color: var(--accent); }
+        
+        blockquote {
+            border-left: 4px solid var(--accent);
+            padding-left: 20px; margin: 32px 0;
+            font-style: italic; color: rgba(255,255,255,0.7);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="film-grain"></div>
+
+    <header>
+        <nav class="apple-nav" id="apple-nav">
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-mark">GK</div>
+                <span class="nav-logo-text">Krishanth</span>
+            </a>
+            <div class="nav-actions">
+                <a href="research.html" class="nav-btn-ghost">← Back to Research</a>
+            </div>
+        </nav>
+    </header>
+
+    <article>
+        <span class="article-meta">Societal Tech Impact <span>December 18, 2024</span></span>
+        
+        <h1>Why Are Students Attracted to Online Gaming? Addiction & Responsibility</h1>
+        
+        <div class="author-box">
+            <img src="assets/About Me/me.png" alt="Krishanth G">
+            <div class="author-info">
+                <strong>Krishanth G</strong>
+                <span>AI & Software Engineer | Python & Full-Stack Developer</span>
+            </div>
+        </div>
+
+        <h2>Introduction</h2>
+        <p>In the digital age, online gaming has emerged as one of the most popular pastimes among students across the globe. The rapid growth of technology, the availability of high-speed internet, and the accessibility of smartphones, computers, and gaming consoles have contributed to this phenomenon. What was once considered a niche hobby has transformed into a mainstream entertainment medium that captivates millions of young minds.</p>
+        
+        <p>However, with increasing engagement in online gaming, concerns have been raised about its addictive nature and the potential harm it can cause to students' mental, physical, and academic well-being. This essay explores the reasons students are attracted to online gaming, the consequences of gaming addiction, and the feasibility of promoting responsible online gaming.</p>
+
+        <h2>Reasons Why Students are Attracted Towards Online Gaming</h2>
+        <p>The attraction of students to online gaming can be attributed to several factors, ranging from psychological fulfillment to social engagement and the technological fascinations of modern games:</p>
+        
+        <ul>
+            <li><strong>Entertainment and Escape from Reality:</strong> Online games provide an immersive experience that allows students to escape daily stresses. Academic pressure, parental expectations, and peer competition often create anxiety. Gaming acts as a temporary refuge in virtual worlds full of adventure.</li>
+            <li><strong>Sense of Achievement and Progress:</strong> Many online games feature reward systems like leveling up, earning virtual currencies, and unlocking achievements. These mechanisms stimulate the brain’s reward pathways, providing students with a deep sense of accomplishment.</li>
+            <li><strong>Social Interaction and Community:</strong> Multiplayer games require teamwork, communication, and strategy, enhancing social skills. Students who feel isolated in real life may turn to online communities where they can form friendships and collaborate.</li>
+            <li><strong>Technological Appeal:</strong> The advanced graphics, realistic simulations, and technologies like VR and AR elevate the experience, attracting tech-savvy students.</li>
+            <li><strong>Stress Relief and Relaxation:</strong> After a long day of classes and homework, students often resort to gaming to unwind.</li>
+            <li><strong>Competitive Nature of Gaming:</strong> Games with ranking systems attract students who enjoy challenges. Competitive gaming (e-sports) has even become a growing career path.</li>
+        </ul>
+
+        <h2>Is Online Gaming Leading to Addiction?</h2>
+        <p>While online gaming offers numerous benefits, excessive engagement can result in addiction, characterized by compulsive behavior and a loss of control. The World Health Organization (WHO) has officially recognized gaming disorder as a mental health condition.</p>
+        
+        <ul>
+            <li><strong>Mental Health Issues:</strong> Prolonged gaming often leads to anxiety, depression, and mood swings. Constant virtual competition can result in stress and aggression.</li>
+            <li><strong>Academic Decline:</strong> Students who spend excessive time playing games often neglect studies and responsibilities, leading to a decline in academic performance.</li>
+            <li><strong>Physical Health Problems:</strong> Excessive gaming causes a sedentary lifestyle, leading to obesity, eye strain, neurological issues, and poor posture.</li>
+            <li><strong>Social Isolation:</strong> While gaming promotes virtual friendships, it can lead to real-world isolation, weakening interpersonal relationships with family and friends.</li>
+            <li><strong>Sleep Deprivation:</strong> Playing late into the night disrupts sleep patterns, leading to fatigue and reduced focus.</li>
+            <li><strong>Financial Impact:</strong> In-game purchases (skins, accessories, upgrades) can create significant financial strain for families.</li>
+        </ul>
+
+        <h2>Is Responsible Online Gaming Feasible?</h2>
+        <p>Given the addictive nature, promoting responsible gaming practices is essential. The following strategies can encourage responsible gaming among students:</p>
+        
+        <ul>
+            <li><strong>Parental Guidance and Monitoring:</strong> Parents should set screen time limits, monitor game content, and encourage a balanced routine.</li>
+            <li><strong>Self-Discipline and Time Management:</strong> Students must manage their habits by setting strict time limits and using tools like screen timers.</li>
+            <li><strong>Awareness Programs in Schools:</strong> Schools should educate students about the risks of excessive gaming via workshops and seminars.</li>
+            <li><strong>Designing Healthier Environments:</strong> Developers should introduce features like time-out reminders, trackers, and robust parental controls.</li>
+            <li><strong>Incorporating Physical Activities:</strong> Engaging in sports and hobbies reduces dependence on gaming.</li>
+            <li><strong>Counseling and Support:</strong> Mental health professionals can provide strategies to cope with addiction and manage stress.</li>
+        </ul>
+
+        <h2>Conclusion</h2>
+        <p>Online gaming has undoubtedly become an integral part of students' lives. While addiction poses significant challenges, responsible gaming is feasible through a collaborative effort involving parents, educators, developers, and policymakers. By fostering a culture of balance and mindfulness, students can explore virtual worlds without jeopardizing their real-world responsibilities and well-being.</p>
+
+    </article>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script>
+        // Nav Shrink
+        window.addEventListener('scroll', () => {
+            document.getElementById('apple-nav').classList.toggle('scrolled', window.scrollY > 10);
+        }, { passive: true });
+
+        // Entrance Animation
+        gsap.from("article > *", { y: 20, opacity: 0, duration: 0.8, stagger: 0.1, ease: "power2.out" });
+    </script>
+</body>
+</html>
